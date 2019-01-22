@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroRadioButton1
@@ -74,9 +75,9 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(12, 78);
+            this.label1.Location = new System.Drawing.Point(1, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1348, 55);
+            this.label1.Size = new System.Drawing.Size(1352, 55);
             this.label1.TabIndex = 1;
             // 
             // labelNameSur
@@ -150,6 +151,12 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "Rəy";
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(0, 0);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,6 +191,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
 
