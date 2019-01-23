@@ -89,5 +89,8 @@
   <ItemGroup>
     <None Include="Resources\iconfinder_radio-button_on_71025.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1182156.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

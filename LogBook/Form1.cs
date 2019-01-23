@@ -24,7 +24,19 @@ namespace LogBook
 
         private void metroRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            metroRadioButton2.Image = Properties.Resources.iconfinder_radio_button_on_71025;
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources._1182156;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

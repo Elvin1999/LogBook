@@ -63,6 +63,16 @@ namespace LogBook.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1182156 {
+            get {
+                object obj = ResourceManager.GetObject("1182156", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_radio_button_on_71025 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_radio-button_on_71025", resourceCulture);
