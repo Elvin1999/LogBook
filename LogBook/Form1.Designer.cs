@@ -49,16 +49,22 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.metroCBYoxlama = new MetroFramework.Controls.MetroComboBox();
+            this.metroCBSinif = new MetroFramework.Controls.MetroComboBox();
             this.metroRadioButton2 = new MetroFramework.Controls.MetroRadioButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroRadioButton3 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroRadioButton5 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroRB4 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
+            this.pictureComment = new System.Windows.Forms.PictureBox();
+            this.pictureDiamond3 = new System.Windows.Forms.PictureBox();
+            this.pictureDiamond2 = new System.Windows.Forms.PictureBox();
+            this.pictureDiamond1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureComment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroRadioButton1
@@ -110,7 +116,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label3.Location = new System.Drawing.Point(519, 77);
+            this.label3.Location = new System.Drawing.Point(504, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(150, 23);
             this.label3.TabIndex = 2;
@@ -122,9 +128,9 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label6.Location = new System.Drawing.Point(1164, 95);
+            this.label6.Location = new System.Drawing.Point(1165, 95);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 23);
+            this.label6.Size = new System.Drawing.Size(35, 23);
             this.label6.TabIndex = 2;
             this.label6.Text = "5";
             // 
@@ -133,7 +139,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label4.Location = new System.Drawing.Point(1037, 95);
+            this.label4.Location = new System.Drawing.Point(988, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 23);
             this.label4.TabIndex = 2;
@@ -144,7 +150,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label5.Location = new System.Drawing.Point(893, 95);
+            this.label5.Location = new System.Drawing.Point(851, 93);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 23);
             this.label5.TabIndex = 2;
@@ -155,7 +161,7 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label7.Location = new System.Drawing.Point(1291, 95);
+            this.label7.Location = new System.Drawing.Point(1272, 95);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 23);
             this.label7.TabIndex = 2;
@@ -264,67 +270,124 @@
             // 
             // label16
             // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label16.Location = new System.Drawing.Point(314, 159);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(100, 23);
             this.label16.TabIndex = 6;
             this.label16.Text = "23.01.2019";
             // 
-            // metroComboBox1
+            // metroCBYoxlama
             // 
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(886, 164);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(78, 29);
-            this.metroComboBox1.TabIndex = 7;
+            this.metroCBYoxlama.FormattingEnabled = true;
+            this.metroCBYoxlama.ItemHeight = 23;
+            this.metroCBYoxlama.Location = new System.Drawing.Point(854, 159);
+            this.metroCBYoxlama.Name = "metroCBYoxlama";
+            this.metroCBYoxlama.Size = new System.Drawing.Size(78, 29);
+            this.metroCBYoxlama.TabIndex = 7;
+            this.metroCBYoxlama.SelectedIndexChanged += new System.EventHandler(this.metroCBYoxlama_SelectedIndexChanged);
             // 
-            // metroComboBox2
+            // metroCBSinif
             // 
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Location = new System.Drawing.Point(1030, 164);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(78, 29);
-            this.metroComboBox2.TabIndex = 7;
+            this.metroCBSinif.FormattingEnabled = true;
+            this.metroCBSinif.ItemHeight = 23;
+            this.metroCBSinif.Location = new System.Drawing.Point(991, 159);
+            this.metroCBSinif.Name = "metroCBSinif";
+            this.metroCBSinif.Size = new System.Drawing.Size(78, 29);
+            this.metroCBSinif.TabIndex = 7;
             // 
             // metroRadioButton2
             // 
             this.metroRadioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.metroRadioButton2.CustomBackground = true;
             this.metroRadioButton2.CustomForeColor = true;
-            this.metroRadioButton2.Location = new System.Drawing.Point(561, 103);
+            this.metroRadioButton2.Location = new System.Drawing.Point(543, 103);
             this.metroRadioButton2.Name = "metroRadioButton2";
             this.metroRadioButton2.Size = new System.Drawing.Size(23, 24);
             this.metroRadioButton2.TabIndex = 10;
             this.metroRadioButton2.TabStop = true;
             this.metroRadioButton2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox3
+            // metroRadioButton3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(594, 154);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.metroRadioButton3.Location = new System.Drawing.Point(507, 153);
+            this.metroRadioButton3.Name = "metroRadioButton3";
+            this.metroRadioButton3.Size = new System.Drawing.Size(17, 24);
+            this.metroRadioButton3.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroRadioButton3.TabIndex = 11;
+            this.metroRadioButton3.TabStop = true;
+            this.metroRadioButton3.Text = "metroRadioButton3";
+            this.metroRadioButton3.UseStyleColors = true;
+            this.metroRadioButton3.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // metroRadioButton5
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(555, 154);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.metroRadioButton5.Location = new System.Drawing.Point(543, 153);
+            this.metroRadioButton5.Name = "metroRadioButton5";
+            this.metroRadioButton5.Size = new System.Drawing.Size(17, 24);
+            this.metroRadioButton5.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.metroRadioButton5.TabIndex = 11;
+            this.metroRadioButton5.TabStop = true;
+            this.metroRadioButton5.Text = "metroRadioButton3";
+            this.metroRadioButton5.UseStyleColors = true;
+            this.metroRadioButton5.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // metroRB4
             // 
-            this.pictureBox1.Image = global::LogBook.Properties.Resources._1182156;
-            this.pictureBox1.Location = new System.Drawing.Point(511, 154);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 21);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.metroRB4.Location = new System.Drawing.Point(579, 153);
+            this.metroRB4.Name = "metroRB4";
+            this.metroRB4.Size = new System.Drawing.Size(17, 24);
+            this.metroRB4.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroRB4.TabIndex = 11;
+            this.metroRB4.TabStop = true;
+            this.metroRB4.Text = "metroRadioButton3";
+            this.metroRB4.UseVisualStyleBackColor = true;
+            // 
+            // metroProgressBar1
+            // 
+            this.metroProgressBar1.Location = new System.Drawing.Point(0, 0);
+            this.metroProgressBar1.Name = "metroProgressBar1";
+            this.metroProgressBar1.TabIndex = 0;
+            // 
+            // pictureComment
+            // 
+            this.pictureComment.Image = global::LogBook.Properties.Resources.comment;
+            this.pictureComment.Location = new System.Drawing.Point(1297, 159);
+            this.pictureComment.Name = "pictureComment";
+            this.pictureComment.Size = new System.Drawing.Size(32, 29);
+            this.pictureComment.TabIndex = 8;
+            this.pictureComment.TabStop = false;
+            this.pictureComment.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureDiamond3
+            // 
+            this.pictureDiamond3.Image = global::LogBook.Properties.Resources.diamond;
+            this.pictureDiamond3.Location = new System.Drawing.Point(1198, 159);
+            this.pictureDiamond3.Name = "pictureDiamond3";
+            this.pictureDiamond3.Size = new System.Drawing.Size(32, 29);
+            this.pictureDiamond3.TabIndex = 8;
+            this.pictureDiamond3.TabStop = false;
+            this.pictureDiamond3.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureDiamond2
+            // 
+            this.pictureDiamond2.Image = global::LogBook.Properties.Resources.diamond;
+            this.pictureDiamond2.Location = new System.Drawing.Point(1157, 159);
+            this.pictureDiamond2.Name = "pictureDiamond2";
+            this.pictureDiamond2.Size = new System.Drawing.Size(32, 29);
+            this.pictureDiamond2.TabIndex = 8;
+            this.pictureDiamond2.TabStop = false;
+            this.pictureDiamond2.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureDiamond1
+            // 
+            this.pictureDiamond1.Image = global::LogBook.Properties.Resources.DiamondGray;
+            this.pictureDiamond1.Location = new System.Drawing.Point(1117, 159);
+            this.pictureDiamond1.Name = "pictureDiamond1";
+            this.pictureDiamond1.Size = new System.Drawing.Size(32, 29);
+            this.pictureDiamond1.TabIndex = 8;
+            this.pictureDiamond1.TabStop = false;
+            this.pictureDiamond1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
@@ -332,12 +395,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1351, 621);
+            this.Controls.Add(this.metroRB4);
+            this.Controls.Add(this.metroRadioButton5);
+            this.Controls.Add(this.metroRadioButton3);
             this.Controls.Add(this.metroRadioButton2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.metroComboBox2);
-            this.Controls.Add(this.metroComboBox1);
+            this.Controls.Add(this.pictureComment);
+            this.Controls.Add(this.pictureDiamond3);
+            this.Controls.Add(this.pictureDiamond2);
+            this.Controls.Add(this.pictureDiamond1);
+            this.Controls.Add(this.metroCBSinif);
+            this.Controls.Add(this.metroCBYoxlama);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -360,9 +427,10 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureComment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,12 +458,17 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private MetroFramework.Controls.MetroComboBox metroCBYoxlama;
+        private MetroFramework.Controls.MetroComboBox metroCBSinif;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton2;
+        private System.Windows.Forms.PictureBox pictureDiamond1;
+        private System.Windows.Forms.PictureBox pictureDiamond2;
+        private System.Windows.Forms.PictureBox pictureDiamond3;
+        private MetroFramework.Controls.MetroRadioButton metroRadioButton3;
+        private MetroFramework.Controls.MetroRadioButton metroRadioButton5;
+        private MetroFramework.Controls.MetroRadioButton metroRB4;
+        private MetroFramework.Controls.MetroProgressBar metroProgressBar1;
+        private System.Windows.Forms.PictureBox pictureComment;
     }
 }
 
