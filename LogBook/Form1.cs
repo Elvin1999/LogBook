@@ -15,6 +15,8 @@ namespace LogBook
         public Form1()
         {
             InitializeComponent();
+            pictureBox1.Image = Properties.Resources._1182156;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -28,9 +30,8 @@ namespace LogBook
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            //
-
+        {            
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

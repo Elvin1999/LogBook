@@ -318,6 +318,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::LogBook.Properties.Resources._1182156;
             this.pictureBox1.Location = new System.Drawing.Point(511, 154);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 21);
