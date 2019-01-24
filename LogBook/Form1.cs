@@ -16,19 +16,7 @@ namespace LogBook
         {
             InitializeComponent();
 
-            object[] numbers = new object[12] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
-            //metroCBSinif.Items.AddRange(numbers);
-            //metroCBYoxlama.Items.AddRange(numbers);
-            /////diamond
-            //pictureDiamond1.Image = Properties.Resources.DiamondGray;            
-            //pictureDiamond1.SizeMode = PictureBoxSizeMode.StretchImage;
-            //pictureDiamond2.Image = Properties.Resources.DiamondGray;
-            //pictureDiamond2.SizeMode = PictureBoxSizeMode.StretchImage;
-            //pictureDiamond3.Image = Properties.Resources.DiamondGray;
-            //pictureDiamond3.SizeMode = PictureBoxSizeMode.StretchImage;
-            //pictureComment.Image = Properties.Resources.comment;
-            //pictureComment.SizeMode = PictureBoxSizeMode.StretchImage;
-            //metroRB4.Checked = true;
+
 
         }
 
@@ -81,6 +69,12 @@ namespace LogBook
             {
                 item.IsAbsent = true;
                 item.Number = (++i).ToString();
+                item.Diamond1.Image = Properties.Resources.DiamondGray;
+                item.Diamond1.SizeMode= PictureBoxSizeMode.StretchImage;
+                item.Diamond2.Image = Properties.Resources.DiamondGray;
+                item.Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
+                item.Diamond3.Image = Properties.Resources.DiamondGray;
+                item.Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             Controls.AddRange(userlist.ToArray());
         }

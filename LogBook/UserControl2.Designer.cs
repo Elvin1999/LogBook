@@ -49,7 +49,7 @@
             // pictureDiamond3
             // 
             this.pictureDiamond3.Image = global::LogBook.Properties.Resources.diamond;
-            this.pictureDiamond3.Location = new System.Drawing.Point(1138, 81);
+            this.pictureDiamond3.Location = new System.Drawing.Point(1172, 81);
             this.pictureDiamond3.Name = "pictureDiamond3";
             this.pictureDiamond3.Size = new System.Drawing.Size(32, 29);
             this.pictureDiamond3.TabIndex = 17;
@@ -77,7 +77,7 @@
             // pictureDiamond1
             // 
             this.pictureDiamond1.Image = global::LogBook.Properties.Resources.DiamondGray;
-            this.pictureDiamond1.Location = new System.Drawing.Point(1057, 81);
+            this.pictureDiamond1.Location = new System.Drawing.Point(1091, 81);
             this.pictureDiamond1.Name = "pictureDiamond1";
             this.pictureDiamond1.Size = new System.Drawing.Size(32, 29);
             this.pictureDiamond1.TabIndex = 19;
@@ -86,7 +86,7 @@
             // pictureDiamond2
             // 
             this.pictureDiamond2.Image = global::LogBook.Properties.Resources.diamond;
-            this.pictureDiamond2.Location = new System.Drawing.Point(1097, 81);
+            this.pictureDiamond2.Location = new System.Drawing.Point(1131, 81);
             this.pictureDiamond2.Name = "pictureDiamond2";
             this.pictureDiamond2.Size = new System.Drawing.Size(32, 29);
             this.pictureDiamond2.TabIndex = 18;
@@ -106,7 +106,7 @@
             // pictureComment
             // 
             this.pictureComment.Image = global::LogBook.Properties.Resources.comment;
-            this.pictureComment.Location = new System.Drawing.Point(1237, 81);
+            this.pictureComment.Location = new System.Drawing.Point(1276, 81);
             this.pictureComment.Name = "pictureComment";
             this.pictureComment.Size = new System.Drawing.Size(32, 29);
             this.pictureComment.TabIndex = 16;

@@ -18,6 +18,12 @@ namespace LogBook
         public bool IsLate { get => metroRb2.Checked; set { metroRb2.Checked = value; } }
         public bool IsAbsent { get => metroRb3.Checked; set { metroRb3.Checked = value; } }
         public string Number { get { return labelNumber.Text; } set { labelNumber.Text = value; } }
+        public bool IsClickedDiamond1 { get; set; }
+        public bool IsClickedDiamond2 { get; set; }
+        public bool IsClickedDiamond3 { get; set; }
+        public PictureBox Diamond1 { get { return pictureDiamond1; } set { pictureDiamond1 = value; } }
+        public PictureBox Diamond2 { get { return pictureDiamond2; } set { pictureDiamond2 = value; } }
+        public PictureBox Diamond3 { get { return pictureDiamond3; } set { pictureDiamond3 = value; } }
         public UserControl2()
         {
             InitializeComponent();
