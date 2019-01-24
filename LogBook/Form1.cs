@@ -15,7 +15,7 @@ namespace LogBook
         public Form1()
         {
             InitializeComponent();
-            
+
             object[] numbers = new object[12] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
             //metroCBSinif.Items.AddRange(numbers);
             //metroCBYoxlama.Items.AddRange(numbers);
@@ -29,7 +29,7 @@ namespace LogBook
             //pictureComment.Image = Properties.Resources.comment;
             //pictureComment.SizeMode = PictureBoxSizeMode.StretchImage;
             //metroRB4.Checked = true;
-            
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -56,7 +56,33 @@ namespace LogBook
             userControl3.Location = new Point(30, 185);
             userControl3.FullName = "Mustafayev Nurullah";
             userControl3.Accesstime = "10.10.2018";
-            Controls.Add(userControl); Controls.Add(userControl2); Controls.Add(userControl3);
+            UserControl2 userControl4 = new UserControl2();
+            userControl4.Location = new Point(30, 240);
+            userControl4.FullName = "Abdullabayli Saleh";
+            userControl4.Accesstime = "10.10.2018";
+            UserControl2 userControl5 = new UserControl2();
+            userControl5.Location = new Point(30, 295);
+            userControl5.FullName = "Mustafayev Tural";
+            userControl5.Accesstime = "10.10.2018";
+            UserControl2 userControl6 = new UserControl2();
+            userControl6.Location = new Point(30, 350);
+            userControl6.FullName = "Omarov Islam";
+            userControl6.Accesstime = "10.10.2018";
+            UserControl2 userControl7 = new UserControl2();
+            userControl7.Location = new Point(30, 405);
+            userControl7.FullName = "Ahmadov Anar";
+            userControl7.Accesstime = "10.10.2018";
+            List<UserControl2> userlist = new List<UserControl2>();
+            userlist.Add(userControl); userlist.Add(userControl2); userlist.Add(userControl3);
+            userlist.Add(userControl4); userlist.Add(userControl5); userlist.Add(userControl6);
+            userlist.Add(userControl7);
+            int i = 0;
+            foreach (var item in userlist)
+            {
+                item.IsAbsent = true;
+                item.Number = (++i).ToString();
+            }
+            Controls.AddRange(userlist.ToArray());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
