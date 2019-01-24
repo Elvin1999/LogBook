@@ -28,32 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureDiamond3 = new System.Windows.Forms.PictureBox();
             this.metroCBYoxlama = new MetroFramework.Controls.MetroComboBox();
             this.metroCBSinif = new MetroFramework.Controls.MetroComboBox();
-            this.pictureDiamond1 = new System.Windows.Forms.PictureBox();
-            this.pictureDiamond2 = new System.Windows.Forms.PictureBox();
             this.metroRb3 = new MetroFramework.Controls.MetroRadioButton();
-            this.pictureComment = new System.Windows.Forms.PictureBox();
             this.metroRb1 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRb2 = new MetroFramework.Controls.MetroRadioButton();
             this.labelFullName = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.labelNumber = new System.Windows.Forms.Label();
+            this.pictureX = new System.Windows.Forms.PictureBox();
+            this.pictureDiamond3 = new System.Windows.Forms.PictureBox();
+            this.pictureDiamond2 = new System.Windows.Forms.PictureBox();
+            this.pictureDiamond1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureComment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureDiamond3
-            // 
-            this.pictureDiamond3.Image = global::LogBook.Properties.Resources.diamond;
-            this.pictureDiamond3.Location = new System.Drawing.Point(1172, 81);
-            this.pictureDiamond3.Name = "pictureDiamond3";
-            this.pictureDiamond3.Size = new System.Drawing.Size(32, 29);
-            this.pictureDiamond3.TabIndex = 17;
-            this.pictureDiamond3.TabStop = false;
             // 
             // metroCBYoxlama
             // 
@@ -74,24 +65,6 @@
             this.metroCBSinif.Size = new System.Drawing.Size(78, 29);
             this.metroCBSinif.TabIndex = 14;
             // 
-            // pictureDiamond1
-            // 
-            this.pictureDiamond1.Image = global::LogBook.Properties.Resources.DiamondGray;
-            this.pictureDiamond1.Location = new System.Drawing.Point(1091, 81);
-            this.pictureDiamond1.Name = "pictureDiamond1";
-            this.pictureDiamond1.Size = new System.Drawing.Size(32, 29);
-            this.pictureDiamond1.TabIndex = 19;
-            this.pictureDiamond1.TabStop = false;
-            // 
-            // pictureDiamond2
-            // 
-            this.pictureDiamond2.Image = global::LogBook.Properties.Resources.diamond;
-            this.pictureDiamond2.Location = new System.Drawing.Point(1131, 81);
-            this.pictureDiamond2.Name = "pictureDiamond2";
-            this.pictureDiamond2.Size = new System.Drawing.Size(32, 29);
-            this.pictureDiamond2.TabIndex = 18;
-            this.pictureDiamond2.TabStop = false;
-            // 
             // metroRb3
             // 
             this.metroRb3.Location = new System.Drawing.Point(547, 86);
@@ -102,15 +75,6 @@
             this.metroRb3.TabStop = true;
             this.metroRb3.Text = "metroRadioButton3";
             this.metroRb3.UseVisualStyleBackColor = true;
-            // 
-            // pictureComment
-            // 
-            this.pictureComment.Image = global::LogBook.Properties.Resources.comment;
-            this.pictureComment.Location = new System.Drawing.Point(1276, 81);
-            this.pictureComment.Name = "pictureComment";
-            this.pictureComment.Size = new System.Drawing.Size(32, 29);
-            this.pictureComment.TabIndex = 16;
-            this.pictureComment.TabStop = false;
             // 
             // metroRb1
             // 
@@ -163,6 +127,46 @@
             this.labelNumber.TabIndex = 25;
             this.labelNumber.Text = "1";
             // 
+            // pictureX
+            // 
+            this.pictureX.Image = global::LogBook.Properties.Resources.Ximage;
+            this.pictureX.Location = new System.Drawing.Point(1210, 81);
+            this.pictureX.Name = "pictureX";
+            this.pictureX.Size = new System.Drawing.Size(32, 29);
+            this.pictureX.TabIndex = 16;
+            this.pictureX.TabStop = false;
+            this.pictureX.Click += new System.EventHandler(this.pictureX_Click);
+            // 
+            // pictureDiamond3
+            // 
+            this.pictureDiamond3.Image = global::LogBook.Properties.Resources.diamond;
+            this.pictureDiamond3.Location = new System.Drawing.Point(1172, 81);
+            this.pictureDiamond3.Name = "pictureDiamond3";
+            this.pictureDiamond3.Size = new System.Drawing.Size(32, 29);
+            this.pictureDiamond3.TabIndex = 17;
+            this.pictureDiamond3.TabStop = false;
+            this.pictureDiamond3.Click += new System.EventHandler(this.pictureDiamond3_Click);
+            // 
+            // pictureDiamond2
+            // 
+            this.pictureDiamond2.Image = global::LogBook.Properties.Resources.diamond;
+            this.pictureDiamond2.Location = new System.Drawing.Point(1131, 81);
+            this.pictureDiamond2.Name = "pictureDiamond2";
+            this.pictureDiamond2.Size = new System.Drawing.Size(32, 29);
+            this.pictureDiamond2.TabIndex = 18;
+            this.pictureDiamond2.TabStop = false;
+            this.pictureDiamond2.Click += new System.EventHandler(this.pictureDiamond2_Click);
+            // 
+            // pictureDiamond1
+            // 
+            this.pictureDiamond1.Image = global::LogBook.Properties.Resources.DiamondGray;
+            this.pictureDiamond1.Location = new System.Drawing.Point(1091, 81);
+            this.pictureDiamond1.Name = "pictureDiamond1";
+            this.pictureDiamond1.Size = new System.Drawing.Size(32, 29);
+            this.pictureDiamond1.TabIndex = 19;
+            this.pictureDiamond1.TabStop = false;
+            this.pictureDiamond1.Click += new System.EventHandler(this.pictureDiamond1_Click);
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,7 +177,7 @@
             this.Controls.Add(this.metroRb3);
             this.Controls.Add(this.metroRb2);
             this.Controls.Add(this.metroRb1);
-            this.Controls.Add(this.pictureComment);
+            this.Controls.Add(this.pictureX);
             this.Controls.Add(this.pictureDiamond3);
             this.Controls.Add(this.pictureDiamond2);
             this.Controls.Add(this.pictureDiamond1);
@@ -182,10 +186,10 @@
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(1349, 133);
             this.Load += new System.EventHandler(this.UserControl2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureComment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,7 +203,7 @@
         private System.Windows.Forms.PictureBox pictureDiamond1;
         private System.Windows.Forms.PictureBox pictureDiamond2;
         private MetroFramework.Controls.MetroRadioButton metroRb3;
-        private System.Windows.Forms.PictureBox pictureComment;
+        private System.Windows.Forms.PictureBox pictureX;
         private MetroFramework.Controls.MetroRadioButton metroRb1;
         private MetroFramework.Controls.MetroRadioButton metroRb2;
         private System.Windows.Forms.Label labelFullName;

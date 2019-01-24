@@ -24,6 +24,7 @@ namespace LogBook
         public PictureBox Diamond1 { get { return pictureDiamond1; } set { pictureDiamond1 = value; } }
         public PictureBox Diamond2 { get { return pictureDiamond2; } set { pictureDiamond2 = value; } }
         public PictureBox Diamond3 { get { return pictureDiamond3; } set { pictureDiamond3 = value; } }
+        public PictureBox PictureX { get { return pictureX; } set { pictureX = value; } }
         public UserControl2()
         {
             InitializeComponent();
@@ -39,6 +40,51 @@ namespace LogBook
         private void metroCBYoxlama_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureDiamond1_Click(object sender, EventArgs e)
+        {
+           
+            Diamond1.Image = Properties.Resources.DiamondBlue;
+            Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
+            IsClickedDiamond1 = true;
+        }
+
+        private void pictureDiamond3_Click(object sender, EventArgs e)
+        {
+            Diamond1.Image = Properties.Resources.DiamondBlue;
+            Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
+            IsClickedDiamond1 = true;
+            Diamond2.Image = Properties.Resources.DiamondBlue;
+            Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
+            IsClickedDiamond2 = true;
+            Diamond3.Image = Properties.Resources.DiamondBlue;
+            Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
+            IsClickedDiamond3 = true;
+        }
+        private void pictureDiamond2_Click(object sender, EventArgs e)
+        {
+            Diamond1.Image = Properties.Resources.DiamondBlue;
+            Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
+            IsClickedDiamond1 = true;
+            Diamond2.Image = Properties.Resources.DiamondBlue;
+            Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
+            IsClickedDiamond2 = true;
+        }
+
+        private void pictureX_Click(object sender, EventArgs e)
+        {
+           
+                Diamond1.Image = Properties.Resources.DiamondGray;
+                Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
+                IsClickedDiamond1 = false;
+                Diamond2.Image = Properties.Resources.DiamondGray;
+                Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
+                IsClickedDiamond2 = false;
+                Diamond3.Image = Properties.Resources.DiamondGray;
+                Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
+                IsClickedDiamond3 = false;
+           
         }
     }
 }
