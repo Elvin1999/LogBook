@@ -86,5 +86,17 @@ namespace LogBook
                 IsClickedDiamond3 = false;
            
         }
+
+        private void pictureX_MouseEnter(object sender, EventArgs e)
+        {
+            pictureX.Image = Properties.Resources.Ximage;
+            pictureX.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void pictureX_MouseLeave(object sender, EventArgs e)
+        {
+            pictureX.Image = Properties.Resources.XimageGray;
+            pictureX.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
     }
 }

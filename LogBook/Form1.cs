@@ -75,7 +75,7 @@ namespace LogBook
                 item.Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
                 item.Diamond3.Image = Properties.Resources.DiamondGray;
                 item.Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
-                item.PictureX.Image = Properties.Resources.Ximage;
+                item.PictureX.Image = Properties.Resources.XimageGray;
                 item.PictureX.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             Controls.AddRange(userlist.ToArray());

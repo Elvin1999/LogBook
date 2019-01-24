@@ -129,13 +129,15 @@
             // 
             // pictureX
             // 
-            this.pictureX.Image = global::LogBook.Properties.Resources.Ximage;
+            this.pictureX.Image = global::LogBook.Properties.Resources.XimageGray;
             this.pictureX.Location = new System.Drawing.Point(1210, 81);
             this.pictureX.Name = "pictureX";
             this.pictureX.Size = new System.Drawing.Size(32, 29);
             this.pictureX.TabIndex = 16;
             this.pictureX.TabStop = false;
             this.pictureX.Click += new System.EventHandler(this.pictureX_Click);
+            this.pictureX.MouseEnter += new System.EventHandler(this.pictureX_MouseEnter);
+            this.pictureX.MouseLeave += new System.EventHandler(this.pictureX_MouseLeave);
             // 
             // pictureDiamond3
             // 
