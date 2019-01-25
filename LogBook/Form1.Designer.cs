@@ -115,7 +115,6 @@
             this.label4.Size = new System.Drawing.Size(71, 23);
             this.label4.TabIndex = 2;
             this.label4.Text = "Sinifde iş";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -127,7 +126,7 @@
             this.label5.Size = new System.Drawing.Size(71, 23);
             this.label5.TabIndex = 2;
             this.label5.Text = "Yoxlama işlər";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+
             // 
             // label7
             // 

@@ -29,28 +29,22 @@ namespace LogBook
         public UserControl2()
         {
             InitializeComponent();
-            
-        }
 
+        }
         private void UserControl2_Load(object sender, EventArgs e)
         {
             object[] numbers = new object[12] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
             metroCBSinif.Items.AddRange(numbers);
             metroCBYoxlama.Items.AddRange(numbers);
         }
-
         private void metroCBYoxlama_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
-
         private void pictureDiamond1_Click(object sender, EventArgs e)
         {
             Diamond1.Image = Properties.Resources.DiamondBlue;
             Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
-      
-                IsClickedDiamond1 = true;
-            
+            IsClickedDiamond1 = true;
         }
         private void pictureDiamond3_Click(object sender, EventArgs e)
         {
@@ -86,7 +80,6 @@ namespace LogBook
             Diamond3.Image = Properties.Resources.DiamondGray;
             Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
             IsClickedDiamond3 = false;
-
         }
 
         private void pictureX_MouseEnter(object sender, EventArgs e)
@@ -109,19 +102,12 @@ namespace LogBook
             textBoxComment.Location = location;
             textBoxComment.Size = new Size(45, 30);
             textBoxComment.Leave += TextBoxComment_Leave;
-            textBoxComment.BackColor = Color.Aqua;
+            textBoxComment.BackColor = Color.FromArgb(227, 246, 255);
             this.Controls.Add(textBoxComment);
         }
-
         private void TextBoxComment_Leave(object sender, EventArgs e)
         {
             textBoxComment.Size = new Size(0, 0);
         }
-
-
-
-
-
-
     }
 }
