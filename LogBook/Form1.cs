@@ -18,10 +18,10 @@ namespace LogBook
         {
             InitializeComponent();
             //DiamondCount = int.Parse(labelCountDiamond.Text);
-
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+
             UserControl2 userControl = new UserControl2();
             userControl.Location = new Point(30, 75);
             userControl.FullName = "Camalzade Elvin";
@@ -60,7 +60,7 @@ namespace LogBook
                 item.IsAbsent = true;
                 item.Number = (++i).ToString();
                 item.Diamond1.Image = Properties.Resources.DiamondGray;
-                item.Diamond1.SizeMode= PictureBoxSizeMode.StretchImage;
+                item.Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
                 item.Diamond2.Image = Properties.Resources.DiamondGray;
                 item.Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
                 item.Diamond3.Image = Properties.Resources.DiamondGray;
@@ -69,20 +69,24 @@ namespace LogBook
                 item.PictureX.SizeMode = PictureBoxSizeMode.StretchImage;
                 item.CommentPicture.Image = Properties.Resources.comment;
                 item.CommentPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                item.Enabled = false;
             }
+            metroNoteAll.Enabled = false;
+            textBContent.Enabled = false;
+            pictureResetContent.Enabled = false;
+            metroRBSubTeacher.Enabled = true;
+            metroRBTeacher.Enabled = true;
             pictureResetContent.Image = Properties.Resources.pen;
             pictureResetContent.SizeMode = PictureBoxSizeMode.StretchImage;
+
             Controls.AddRange(userlist.ToArray());
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox pictureBox = sender as PictureBox;
             pictureBox.Image = Properties.Resources.DiamondBlue;
             pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-
         }
-
         private void metroNoteAll_CheckedChanged(object sender, EventArgs e)
         {
             foreach (var item in userlist)
@@ -98,6 +102,23 @@ namespace LogBook
 
         private void label4_Click(object sender, EventArgs e)
         {
+
+        }
+        public bool CheckAccess { get; set; }
+        private void metroRBTeacher_CheckedChanged(object sender, EventArgs e)
+        {
+
+            if (CheckAccess)
+            {
+                foreach (var item in userlist)
+                {
+                    item.Enabled = true;
+                }
+                metroNoteAll.Enabled = true;
+                textBContent.Enabled = true;
+                pictureResetContent.Enabled = true;
+            }
+            CheckAccess = true;
 
         }
     }

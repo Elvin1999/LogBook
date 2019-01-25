@@ -42,7 +42,7 @@
             this.metroRBSubTeacher = new MetroFramework.Controls.MetroRadioButton();
             this.metroNoteAll = new MetroFramework.Controls.MetroRadioButton();
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBContent = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureResetContent = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -62,6 +62,7 @@
             this.metroRBTeacher.TabStop = true;
             this.metroRBTeacher.Text = "Əsas müəllim";
             this.metroRBTeacher.UseVisualStyleBackColor = false;
+            this.metroRBTeacher.CheckedChanged += new System.EventHandler(this.metroRBTeacher_CheckedChanged);
             // 
             // label1
             // 
@@ -176,6 +177,7 @@
             this.metroRBSubTeacher.TabStop = true;
             this.metroRBSubTeacher.Text = "Müəllim əvəz olunur";
             this.metroRBSubTeacher.UseVisualStyleBackColor = false;
+            this.metroRBSubTeacher.CheckedChanged += new System.EventHandler(this.metroRBTeacher_CheckedChanged);
             // 
             // metroNoteAll
             // 
@@ -197,12 +199,12 @@
             this.metroProgressBar1.Size = new System.Drawing.Size(100, 23);
             this.metroProgressBar1.TabIndex = 0;
             // 
-            // textBox1
+            // textBContent
             // 
-            this.textBox1.Location = new System.Drawing.Point(733, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 11;
+            this.textBContent.Location = new System.Drawing.Point(733, 41);
+            this.textBContent.Name = "textBContent";
+            this.textBContent.Size = new System.Drawing.Size(100, 20);
+            this.textBContent.TabIndex = 11;
             // 
             // label6
             // 
@@ -230,7 +232,7 @@
             this.ClientSize = new System.Drawing.Size(1351, 622);
             this.Controls.Add(this.pictureResetContent);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBContent);
             this.Controls.Add(this.metroNoteAll);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
@@ -268,7 +270,7 @@
         private MetroFramework.Controls.MetroRadioButton metroRBSubTeacher;
         private MetroFramework.Controls.MetroRadioButton metroNoteAll;
         private MetroFramework.Controls.MetroProgressBar metroProgressBar1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBContent;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureResetContent;
     }
