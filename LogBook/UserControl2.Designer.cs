@@ -77,6 +77,7 @@
             this.metroRb3.TabStop = true;
             this.metroRb3.Text = "metroRadioButton3";
             this.metroRb3.UseVisualStyleBackColor = true;
+            this.metroRb3.CheckedChanged += new System.EventHandler(this.metroRb3_CheckedChanged);
             // 
             // metroRb1
             // 
@@ -102,6 +103,7 @@
             this.metroRb2.Text = "metroRadioButton3";
             this.metroRb2.UseStyleColors = true;
             this.metroRb2.UseVisualStyleBackColor = true;
+            this.metroRb2.CheckedChanged += new System.EventHandler(this.metroRb1_CheckedChanged);
             // 
             // labelFullName
             // 

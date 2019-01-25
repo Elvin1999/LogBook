@@ -36,7 +36,6 @@ namespace LogBook
         public UserControl2()
         {
             InitializeComponent();
-
         }
         private void UserControl2_Load(object sender, EventArgs e)
         {
@@ -77,7 +76,6 @@ namespace LogBook
 
         private void pictureX_Click(object sender, EventArgs e)
         {
-
             Diamond1.Image = Properties.Resources.DiamondGray;
             Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
             IsClickedDiamond1 = false;
@@ -119,21 +117,34 @@ namespace LogBook
 
         private void metroRb1_CheckedChanged(object sender, EventArgs e)
         {
-            //if (metroRb1.Checked == true)
-            //{
-            //    foreach (var item in this.Controls)
-            //    {
-            //        if (item is ComboBox cb)
-            //        {
-            //            cb.Enabled = true;
-            //        }
-            //        if (item is PictureBox pb)
-            //        {
-            //            pb.Enabled = true;
-            //        }
-            //    }
-            //}
+            var button = sender as MetroFramework.Controls.MetroRadioButton;
+            if (button.Checked)
+            {
+                _Combobox1.Enabled = true;
+                _Combobox2.Enabled = true;
+                Diamond1.Enabled = true;
+                Diamond2.Enabled = true;
+                Diamond3.Enabled = true;
+                PictureX.Enabled = true;
+                CommentPicture.Enabled = true;
+            }
 
+        }
+
+        private void metroRb3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (metroRb3.Checked)
+            {
+                _Combobox1.Enabled = false;
+                _Combobox2.Enabled = false;
+                _Combobox1.SelectedItem = null;
+                _Combobox2.SelectedItem = null;
+                Diamond1.Enabled = false;
+                Diamond2.Enabled = false;
+                Diamond3.Enabled = false;
+                PictureX.Enabled = false;//you have to decrease diamonds counts
+                CommentPicture.Enabled = false;
+            }
         }
     }
 }
