@@ -13,21 +13,13 @@ namespace LogBook
     public partial class Form1 : Form
     {
         public List<UserControl2> userlist { get; set; }
-        
+        public int DiamondCount { get; set; }
         public Form1()
         {
             InitializeComponent();
-        }
-        private void label3_Click(object sender, EventArgs e)
-        {
+            //DiamondCount = int.Parse(labelCountDiamond.Text);
 
         }
-
-        private void metroRadioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             UserControl2 userControl = new UserControl2();
@@ -75,6 +67,8 @@ namespace LogBook
                 item.Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
                 item.PictureX.Image = Properties.Resources.XimageGray;
                 item.PictureX.SizeMode = PictureBoxSizeMode.StretchImage;
+                item.CommentPicture.Image = Properties.Resources.comment;
+                item.CommentPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             Controls.AddRange(userlist.ToArray());
         }
@@ -87,27 +81,22 @@ namespace LogBook
 
         }
 
-        private void metroCBYoxlama_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void metroNoteAll_CheckedChanged(object sender, EventArgs e)
         {
             foreach (var item in userlist)
             {
                 item.IsTakePart = true;
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -33,7 +33,6 @@
             this.labelNameSur = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -100,47 +99,37 @@
             this.label3.Size = new System.Drawing.Size(150, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Her kesi qeyd etmek";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label6.Location = new System.Drawing.Point(1165, 95);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 23);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "5";
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label4.Location = new System.Drawing.Point(988, 93);
+            this.label4.Location = new System.Drawing.Point(937, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 23);
             this.label4.TabIndex = 2;
             this.label4.Text = "Sinifde iş";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label5.Location = new System.Drawing.Point(851, 93);
+            this.label5.Location = new System.Drawing.Point(806, 93);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 23);
             this.label5.TabIndex = 2;
             this.label5.Text = "Yoxlama işlər";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label7.Location = new System.Drawing.Point(1272, 95);
+            this.label7.Location = new System.Drawing.Point(1291, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 23);
             this.label7.TabIndex = 2;
@@ -216,7 +205,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelNameSur);
@@ -237,7 +225,6 @@
         private System.Windows.Forms.Label labelNameSur;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;

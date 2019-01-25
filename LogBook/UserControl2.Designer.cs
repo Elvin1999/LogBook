@@ -36,10 +36,12 @@
             this.labelFullName = new System.Windows.Forms.Label();
             this.labelTime = new System.Windows.Forms.Label();
             this.labelNumber = new System.Windows.Forms.Label();
+            this.pictureBComment = new System.Windows.Forms.PictureBox();
             this.pictureX = new System.Windows.Forms.PictureBox();
             this.pictureDiamond3 = new System.Windows.Forms.PictureBox();
             this.pictureDiamond2 = new System.Windows.Forms.PictureBox();
             this.pictureDiamond1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBComment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond2)).BeginInit();
@@ -50,7 +52,7 @@
             // 
             this.metroCBYoxlama.FormattingEnabled = true;
             this.metroCBYoxlama.ItemHeight = 23;
-            this.metroCBYoxlama.Location = new System.Drawing.Point(797, 81);
+            this.metroCBYoxlama.Location = new System.Drawing.Point(775, 82);
             this.metroCBYoxlama.Name = "metroCBYoxlama";
             this.metroCBYoxlama.Size = new System.Drawing.Size(78, 29);
             this.metroCBYoxlama.TabIndex = 15;
@@ -60,7 +62,7 @@
             // 
             this.metroCBSinif.FormattingEnabled = true;
             this.metroCBSinif.ItemHeight = 23;
-            this.metroCBSinif.Location = new System.Drawing.Point(934, 81);
+            this.metroCBSinif.Location = new System.Drawing.Point(912, 82);
             this.metroCBSinif.Name = "metroCBSinif";
             this.metroCBSinif.Size = new System.Drawing.Size(78, 29);
             this.metroCBSinif.TabIndex = 14;
@@ -127,10 +129,20 @@
             this.labelNumber.TabIndex = 25;
             this.labelNumber.Text = "1";
             // 
+            // pictureBComment
+            // 
+            this.pictureBComment.Image = global::LogBook.Properties.Resources.comment1;
+            this.pictureBComment.Location = new System.Drawing.Point(1272, 82);
+            this.pictureBComment.Name = "pictureBComment";
+            this.pictureBComment.Size = new System.Drawing.Size(32, 29);
+            this.pictureBComment.TabIndex = 16;
+            this.pictureBComment.TabStop = false;
+            this.pictureBComment.Click += new System.EventHandler(this.pictureComment_Click);
+            // 
             // pictureX
             // 
             this.pictureX.Image = global::LogBook.Properties.Resources.XimageGray;
-            this.pictureX.Location = new System.Drawing.Point(1210, 81);
+            this.pictureX.Location = new System.Drawing.Point(1182, 82);
             this.pictureX.Name = "pictureX";
             this.pictureX.Size = new System.Drawing.Size(32, 29);
             this.pictureX.TabIndex = 16;
@@ -142,7 +154,7 @@
             // pictureDiamond3
             // 
             this.pictureDiamond3.Image = global::LogBook.Properties.Resources.diamond;
-            this.pictureDiamond3.Location = new System.Drawing.Point(1172, 81);
+            this.pictureDiamond3.Location = new System.Drawing.Point(1144, 82);
             this.pictureDiamond3.Name = "pictureDiamond3";
             this.pictureDiamond3.Size = new System.Drawing.Size(32, 29);
             this.pictureDiamond3.TabIndex = 17;
@@ -152,7 +164,7 @@
             // pictureDiamond2
             // 
             this.pictureDiamond2.Image = global::LogBook.Properties.Resources.diamond;
-            this.pictureDiamond2.Location = new System.Drawing.Point(1131, 81);
+            this.pictureDiamond2.Location = new System.Drawing.Point(1103, 82);
             this.pictureDiamond2.Name = "pictureDiamond2";
             this.pictureDiamond2.Size = new System.Drawing.Size(32, 29);
             this.pictureDiamond2.TabIndex = 18;
@@ -162,7 +174,7 @@
             // pictureDiamond1
             // 
             this.pictureDiamond1.Image = global::LogBook.Properties.Resources.DiamondGray;
-            this.pictureDiamond1.Location = new System.Drawing.Point(1091, 81);
+            this.pictureDiamond1.Location = new System.Drawing.Point(1063, 82);
             this.pictureDiamond1.Name = "pictureDiamond1";
             this.pictureDiamond1.Size = new System.Drawing.Size(32, 29);
             this.pictureDiamond1.TabIndex = 19;
@@ -179,6 +191,7 @@
             this.Controls.Add(this.metroRb3);
             this.Controls.Add(this.metroRb2);
             this.Controls.Add(this.metroRb1);
+            this.Controls.Add(this.pictureBComment);
             this.Controls.Add(this.pictureX);
             this.Controls.Add(this.pictureDiamond3);
             this.Controls.Add(this.pictureDiamond2);
@@ -188,6 +201,7 @@
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(1349, 133);
             this.Load += new System.EventHandler(this.UserControl2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBComment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond2)).EndInit();
@@ -211,5 +225,6 @@
         private System.Windows.Forms.Label labelFullName;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label labelNumber;
+        private System.Windows.Forms.PictureBox pictureBComment;
     }
 }
