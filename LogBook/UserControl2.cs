@@ -100,16 +100,27 @@ namespace LogBook
             pictureX.Image = Properties.Resources.XimageGray;
             pictureX.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-
+        TextBox textBoxComment = new TextBox();
         private void pictureComment_Click(object sender, EventArgs e)
         {
-            TextBox textBoxComment = new TextBox();
             Point location = pictureBComment.Location;
             location.X -= 45;
             location.Y += 5;
             textBoxComment.Location = location;
             textBoxComment.Size = new Size(40, 30);
+            textBoxComment.Leave += TextBoxComment_Leave;
             this.Controls.Add(textBoxComment);
         }
+
+        private void TextBoxComment_Leave(object sender, EventArgs e)
+        {
+            textBoxComment.Size = new Size(0, 0);
+        }
+
+
+
+
+
+
     }
 }
