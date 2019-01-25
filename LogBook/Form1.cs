@@ -12,14 +12,12 @@ namespace LogBook
 {
     public partial class Form1 : Form
     {
+        public List<UserControl2> userlist { get; set; }
+        
         public Form1()
         {
             InitializeComponent();
-
-
-
         }
-
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -60,7 +58,7 @@ namespace LogBook
             userControl7.Location = new Point(30, 405);
             userControl7.FullName = "Ahmadov Anar";
             userControl7.Accesstime = "10.10.2018";
-            List<UserControl2> userlist = new List<UserControl2>();
+            userlist = new List<UserControl2>();
             userlist.Add(userControl); userlist.Add(userControl2); userlist.Add(userControl3);
             userlist.Add(userControl4); userlist.Add(userControl5); userlist.Add(userControl6);
             userlist.Add(userControl7);
@@ -102,6 +100,14 @@ namespace LogBook
         private void label13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroNoteAll_CheckedChanged(object sender, EventArgs e)
+        {
+            foreach (var item in userlist)
+            {
+                item.IsTakePart = true;
+            }
         }
     }
 }

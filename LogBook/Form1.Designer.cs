@@ -41,7 +41,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.metroRadioButton4 = new MetroFramework.Controls.MetroRadioButton();
-            this.metroRadioButton2 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroNoteAll = new MetroFramework.Controls.MetroRadioButton();
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -184,17 +184,18 @@
             this.metroRadioButton4.Text = "Müəllim əvəz olunur";
             this.metroRadioButton4.UseVisualStyleBackColor = false;
             // 
-            // metroRadioButton2
+            // metroNoteAll
             // 
-            this.metroRadioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.metroRadioButton2.CustomBackground = true;
-            this.metroRadioButton2.CustomForeColor = true;
-            this.metroRadioButton2.Location = new System.Drawing.Point(543, 103);
-            this.metroRadioButton2.Name = "metroRadioButton2";
-            this.metroRadioButton2.Size = new System.Drawing.Size(23, 24);
-            this.metroRadioButton2.TabIndex = 10;
-            this.metroRadioButton2.TabStop = true;
-            this.metroRadioButton2.UseVisualStyleBackColor = false;
+            this.metroNoteAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.metroNoteAll.CustomBackground = true;
+            this.metroNoteAll.CustomForeColor = true;
+            this.metroNoteAll.Location = new System.Drawing.Point(543, 103);
+            this.metroNoteAll.Name = "metroNoteAll";
+            this.metroNoteAll.Size = new System.Drawing.Size(23, 24);
+            this.metroNoteAll.TabIndex = 10;
+            this.metroNoteAll.TabStop = true;
+            this.metroNoteAll.UseVisualStyleBackColor = false;
+            this.metroNoteAll.CheckedChanged += new System.EventHandler(this.metroNoteAll_CheckedChanged);
             // 
             // metroProgressBar1
             // 
@@ -208,8 +209,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1351, 621);
-            this.Controls.Add(this.metroRadioButton2);
+            this.ClientSize = new System.Drawing.Size(1351, 622);
+            this.Controls.Add(this.metroNoteAll);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
@@ -221,7 +222,7 @@
             this.Controls.Add(this.labelNameSur);
             this.Controls.Add(this.label1);
             this.MaximumSize = new System.Drawing.Size(1367, 660);
-            this.MinimumSize = new System.Drawing.Size(1367, 660);
+            this.MinimumSize = new System.Drawing.Size(1364, 660);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -244,7 +245,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
         private MetroFramework.Controls.MetroRadioButton metroRadioButton4;
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton2;
+        private MetroFramework.Controls.MetroRadioButton metroNoteAll;
         private MetroFramework.Controls.MetroProgressBar metroProgressBar1;
     }
 }
