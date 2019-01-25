@@ -33,6 +33,7 @@ namespace LogBook
         public MetroFramework.Controls.MetroComboBox _Combobox1 { get { return metroCBClass; } set { metroCBClass = value; } }
         public MetroFramework.Controls.MetroComboBox _Combobox2 { get { return metroCBChecking; } set { metroCBChecking = value; } }
         public PictureBox CommentPicture { get { return pictureBComment; } set { pictureBComment = value; } }
+        public TextBox Comment { get { return textBoxComment; } set { textBoxComment = value; } }
         public UserControl2()
         {
             InitializeComponent();
@@ -98,7 +99,6 @@ namespace LogBook
             pictureX.Image = Properties.Resources.XimageGray;
             pictureX.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-        TextBox textBoxComment = new TextBox();
         private void pictureComment_Click(object sender, EventArgs e)
         {
             Point location = pictureBComment.Location;

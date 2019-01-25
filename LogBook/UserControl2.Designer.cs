@@ -41,6 +41,7 @@
             this.pictureDiamond3 = new System.Windows.Forms.PictureBox();
             this.pictureDiamond2 = new System.Windows.Forms.PictureBox();
             this.pictureDiamond1 = new System.Windows.Forms.PictureBox();
+            this.textBoxComment = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBComment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond3)).BeginInit();
@@ -184,10 +185,18 @@
             this.pictureDiamond1.TabStop = false;
             this.pictureDiamond1.Click += new System.EventHandler(this.pictureDiamond1_Click);
             // 
+            // textBoxComment
+            // 
+            this.textBoxComment.Location = new System.Drawing.Point(200, 200);
+            this.textBoxComment.Name = "textBoxComment";
+            this.textBoxComment.Size = new System.Drawing.Size(0, 20);
+            this.textBoxComment.TabIndex = 26;
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBoxComment);
             this.Controls.Add(this.labelNumber);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.labelFullName);
@@ -229,5 +238,6 @@
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label labelNumber;
         private System.Windows.Forms.PictureBox pictureBComment;
+        private System.Windows.Forms.TextBox textBoxComment;
     }
 }

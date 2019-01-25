@@ -16,5 +16,6 @@ namespace LogBook
         public int CheckPoint { get; set; }
         public int ClassPoint { get; set; }
         public int DiamondCount { get; set; }
+        public string Comment { get; set; }
     }
 }

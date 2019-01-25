@@ -144,6 +144,12 @@ namespace LogBook
 
         private void picturebCountDiamond_Click(object sender, EventArgs e)
         {
+            
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             controller.LessonContent = textBContent.Text;//to write file must take place in X button . . .
             controller.UserList = new List<User>();
             picturebCountDiamond.Enabled = false;//temporary
@@ -159,15 +165,11 @@ namespace LogBook
                 controller.UserList[i].CheckPoint = userlist[i]._Combobox1.SelectedIndex + 1;
                 controller.UserList[i].ClassPoint = userlist[i]._Combobox2.SelectedIndex + 1;
                 controller.UserList[i].DiamondCount = userlist[i].DiamondCount;
+                controller.UserList[i].Comment = userlist[i].Comment.Text;
             }
             Guid guid = Guid.NewGuid();
             var result = JsonConvert.SerializeObject(controller);
             File.WriteAllText(guid.ToString() + ".json", result);
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             Application.Exit();
         }
     }
