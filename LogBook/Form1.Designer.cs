@@ -99,7 +99,7 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.label3.Location = new System.Drawing.Point(504, 77);
+            this.label3.Location = new System.Drawing.Point(492, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(150, 23);
             this.label3.TabIndex = 2;
@@ -126,7 +126,6 @@
             this.label5.Size = new System.Drawing.Size(71, 23);
             this.label5.TabIndex = 2;
             this.label5.Text = "Yoxlama işlər";
-
             // 
             // label7
             // 
@@ -183,7 +182,7 @@
             this.metroNoteAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.metroNoteAll.CustomBackground = true;
             this.metroNoteAll.CustomForeColor = true;
-            this.metroNoteAll.Location = new System.Drawing.Point(543, 103);
+            this.metroNoteAll.Location = new System.Drawing.Point(540, 103);
             this.metroNoteAll.Name = "metroNoteAll";
             this.metroNoteAll.Size = new System.Drawing.Size(23, 24);
             this.metroNoteAll.TabIndex = 10;
@@ -204,6 +203,7 @@
             this.textBContent.Name = "textBContent";
             this.textBContent.Size = new System.Drawing.Size(100, 20);
             this.textBContent.TabIndex = 11;
+            this.textBContent.Enter += new System.EventHandler(this.textBContent_Enter);
             // 
             // label6
             // 
@@ -222,6 +222,7 @@
             this.pictureResetContent.Size = new System.Drawing.Size(25, 23);
             this.pictureResetContent.TabIndex = 13;
             this.pictureResetContent.TabStop = false;
+            this.pictureResetContent.Click += new System.EventHandler(this.pictureResetContent_Click);
             // 
             // Form1
             // 

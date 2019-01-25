@@ -111,11 +111,30 @@ namespace LogBook
                     item.Diamond1.Enabled = false;
                     item.Diamond2.Enabled = false;
                     item.Diamond3.Enabled = false;
-                    
+
                 }
             }
             CheckAccess = true;
 
+        }
+        public bool IsWritedToContent { get; set; }
+        private void pictureResetContent_Click(object sender, EventArgs e)
+        {
+            if (IsWritedToContent)
+            {
+                textBContent.Enabled = false;
+                IsWritedToContent = false;
+            }
+            else
+            {
+                textBContent.Enabled = true;
+            }
+
+        }
+
+        private void textBContent_Enter(object sender, EventArgs e)
+        {
+            IsWritedToContent = true;
         }
     }
 }
