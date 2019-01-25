@@ -77,7 +77,8 @@ namespace LogBook
             metroRBTeacher.Enabled = true;
             pictureResetContent.Image = Properties.Resources.pen;
             pictureResetContent.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            picturebCountDiamond.Image = Properties.Resources.DiamondBlue;//I have to replace by another png icon
+            picturebCountDiamond.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.AddRange(userlist.ToArray());
         }
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -136,5 +137,7 @@ namespace LogBook
         {
             IsWritedToContent = true;
         }
+
+
     }
 }

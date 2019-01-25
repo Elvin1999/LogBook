@@ -44,8 +44,11 @@
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
             this.textBContent = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.labelCountDiamond = new System.Windows.Forms.Label();
+            this.picturebCountDiamond = new System.Windows.Forms.PictureBox();
             this.pictureResetContent = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebCountDiamond)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureResetContent)).BeginInit();
             this.SuspendLayout();
             // 
@@ -214,6 +217,26 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Dersin movzusu";
             // 
+            // labelCountDiamond
+            // 
+            this.labelCountDiamond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.labelCountDiamond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountDiamond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.labelCountDiamond.Location = new System.Drawing.Point(1053, 93);
+            this.labelCountDiamond.Name = "labelCountDiamond";
+            this.labelCountDiamond.Size = new System.Drawing.Size(71, 23);
+            this.labelCountDiamond.TabIndex = 2;
+            this.labelCountDiamond.Text = "5";
+            // 
+            // picturebCountDiamond
+            // 
+            this.picturebCountDiamond.Location = new System.Drawing.Point(1076, 87);
+            this.picturebCountDiamond.Name = "picturebCountDiamond";
+            this.picturebCountDiamond.Size = new System.Drawing.Size(32, 29);
+            this.picturebCountDiamond.TabIndex = 13;
+            this.picturebCountDiamond.TabStop = false;
+            this.picturebCountDiamond.Click += new System.EventHandler(this.pictureResetContent_Click);
+            // 
             // pictureResetContent
             // 
             this.pictureResetContent.BackgroundImage = global::LogBook.Properties.Resources.pen;
@@ -230,6 +253,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1351, 622);
+            this.Controls.Add(this.picturebCountDiamond);
             this.Controls.Add(this.pictureResetContent);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBContent);
@@ -237,6 +261,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.labelCountDiamond);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
@@ -249,6 +274,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picturebCountDiamond)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureResetContent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -273,6 +299,8 @@
         private System.Windows.Forms.TextBox textBContent;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureResetContent;
+        private System.Windows.Forms.Label labelCountDiamond;
+        private System.Windows.Forms.PictureBox picturebCountDiamond;
     }
 }
 
