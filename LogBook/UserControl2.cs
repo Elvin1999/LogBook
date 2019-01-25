@@ -103,7 +103,13 @@ namespace LogBook
 
         private void pictureComment_Click(object sender, EventArgs e)
         {
-
+            TextBox textBoxComment = new TextBox();
+            Point location = pictureBComment.Location;
+            location.X -= 45;
+            location.Y += 5;
+            textBoxComment.Location = location;
+            textBoxComment.Size = new Size(40, 30);
+            this.Controls.Add(textBoxComment);
         }
     }
 }
