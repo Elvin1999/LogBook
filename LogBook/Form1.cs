@@ -70,6 +70,8 @@ namespace LogBook
                 item.CommentPicture.Image = Properties.Resources.comment;
                 item.CommentPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+            pictureResetContent.Image = Properties.Resources.pen;
+            pictureResetContent.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.AddRange(userlist.ToArray());
         }
 

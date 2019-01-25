@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroRadioButton1 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroRBTeacher = new MetroFramework.Controls.MetroRadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.labelNameSur = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,25 +39,29 @@
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.metroRadioButton4 = new MetroFramework.Controls.MetroRadioButton();
+            this.metroRBSubTeacher = new MetroFramework.Controls.MetroRadioButton();
             this.metroNoteAll = new MetroFramework.Controls.MetroRadioButton();
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureResetContent = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureResetContent)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroRadioButton1
+            // metroRBTeacher
             // 
-            this.metroRadioButton1.BackColor = System.Drawing.Color.White;
-            this.metroRadioButton1.CustomForeColor = true;
-            this.metroRadioButton1.ForeColor = System.Drawing.Color.Black;
-            this.metroRadioButton1.ImageKey = "(none)";
-            this.metroRadioButton1.Location = new System.Drawing.Point(6, 9);
-            this.metroRadioButton1.Name = "metroRadioButton1";
-            this.metroRadioButton1.Size = new System.Drawing.Size(125, 17);
-            this.metroRadioButton1.TabIndex = 0;
-            this.metroRadioButton1.TabStop = true;
-            this.metroRadioButton1.Text = "Əsas müəllim";
-            this.metroRadioButton1.UseVisualStyleBackColor = false;
+            this.metroRBTeacher.BackColor = System.Drawing.Color.White;
+            this.metroRBTeacher.CustomForeColor = true;
+            this.metroRBTeacher.ForeColor = System.Drawing.Color.Black;
+            this.metroRBTeacher.ImageKey = "(none)";
+            this.metroRBTeacher.Location = new System.Drawing.Point(6, 9);
+            this.metroRBTeacher.Name = "metroRBTeacher";
+            this.metroRBTeacher.Size = new System.Drawing.Size(125, 17);
+            this.metroRBTeacher.TabIndex = 0;
+            this.metroRBTeacher.TabStop = true;
+            this.metroRBTeacher.Text = "Əsas müəllim";
+            this.metroRBTeacher.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -154,24 +158,24 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.metroRadioButton4);
-            this.groupBox1.Controls.Add(this.metroRadioButton1);
+            this.groupBox1.Controls.Add(this.metroRBSubTeacher);
+            this.groupBox1.Controls.Add(this.metroRBTeacher);
             this.groupBox1.Location = new System.Drawing.Point(12, 32);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(282, 32);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // metroRadioButton4
+            // metroRBSubTeacher
             // 
-            this.metroRadioButton4.BackColor = System.Drawing.Color.White;
-            this.metroRadioButton4.Location = new System.Drawing.Point(137, 9);
-            this.metroRadioButton4.Name = "metroRadioButton4";
-            this.metroRadioButton4.Size = new System.Drawing.Size(139, 17);
-            this.metroRadioButton4.TabIndex = 0;
-            this.metroRadioButton4.TabStop = true;
-            this.metroRadioButton4.Text = "Müəllim əvəz olunur";
-            this.metroRadioButton4.UseVisualStyleBackColor = false;
+            this.metroRBSubTeacher.BackColor = System.Drawing.Color.White;
+            this.metroRBSubTeacher.Location = new System.Drawing.Point(137, 9);
+            this.metroRBSubTeacher.Name = "metroRBSubTeacher";
+            this.metroRBSubTeacher.Size = new System.Drawing.Size(139, 17);
+            this.metroRBSubTeacher.TabIndex = 0;
+            this.metroRBSubTeacher.TabStop = true;
+            this.metroRBSubTeacher.Text = "Müəllim əvəz olunur";
+            this.metroRBSubTeacher.UseVisualStyleBackColor = false;
             // 
             // metroNoteAll
             // 
@@ -193,12 +197,40 @@
             this.metroProgressBar1.Size = new System.Drawing.Size(100, 23);
             this.metroProgressBar1.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(733, 41);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(611, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 20);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Dersin movzusu";
+            // 
+            // pictureResetContent
+            // 
+            this.pictureResetContent.BackgroundImage = global::LogBook.Properties.Resources.pen;
+            this.pictureResetContent.Location = new System.Drawing.Point(839, 35);
+            this.pictureResetContent.Name = "pictureResetContent";
+            this.pictureResetContent.Size = new System.Drawing.Size(25, 23);
+            this.pictureResetContent.TabIndex = 13;
+            this.pictureResetContent.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1351, 622);
+            this.Controls.Add(this.pictureResetContent);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.metroNoteAll);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label8);
@@ -215,12 +247,14 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureResetContent)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton1;
+        private MetroFramework.Controls.MetroRadioButton metroRBTeacher;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelNameSur;
         private System.Windows.Forms.Label label2;
@@ -231,9 +265,12 @@
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
-        private MetroFramework.Controls.MetroRadioButton metroRadioButton4;
+        private MetroFramework.Controls.MetroRadioButton metroRBSubTeacher;
         private MetroFramework.Controls.MetroRadioButton metroNoteAll;
         private MetroFramework.Controls.MetroProgressBar metroProgressBar1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureResetContent;
     }
 }
 

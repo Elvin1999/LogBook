@@ -107,8 +107,9 @@ namespace LogBook
             location.X -= 45;
             location.Y += 5;
             textBoxComment.Location = location;
-            textBoxComment.Size = new Size(40, 30);
+            textBoxComment.Size = new Size(45, 30);
             textBoxComment.Leave += TextBoxComment_Leave;
+            textBoxComment.BackColor = Color.Aqua;
             this.Controls.Add(textBoxComment);
         }
 
