@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,17 +15,18 @@ namespace LogBook
     public partial class Form1 : Form
     {
         public List<UserControl2> userlist { get; set; }
+        Controller controller = new Controller();
         public int DiamondCount { get; set; }
         public Form1()
         {
             InitializeComponent();
-            //DiamondCount = int.Parse(labelCountDiamond.Text);
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             UserControl2 userControl = new UserControl2();
             userControl.Location = new Point(30, 75);
-            userControl.FullName = "Camalzade Elvin";
+            userControl.FullName = "Camalzade_Elvin";
             userControl.Accesstime = "10.10.2018";
             UserControl2 userControl2 = new UserControl2();
             userControl2.Location = new Point(30, 130);
@@ -121,6 +124,7 @@ namespace LogBook
         public bool IsWritedToContent { get; set; }
         private void pictureResetContent_Click(object sender, EventArgs e)
         {
+
             if (IsWritedToContent)
             {
                 textBContent.Enabled = false;
@@ -138,6 +142,27 @@ namespace LogBook
             IsWritedToContent = true;
         }
 
-
+        private void picturebCountDiamond_Click(object sender, EventArgs e)
+        {
+            controller.LessonContent = textBContent.Text;//to write file must take place in X button . . .
+            controller.UserList = new List<User>();
+            picturebCountDiamond.Enabled = false;//temporary
+            for (int i = 0; i < userlist.Count; i++)
+            {
+                var item = new User();
+                controller.UserList.Add(item);
+                controller.UserList[i].FullName = userlist[i].FullName;
+                controller.UserList[i].AccessDate = DateTime.Now;
+                controller.UserList[i].IsTakePartIn = userlist[i].IsTakePart;
+                controller.UserList[i].IsLate = userlist[i].IsLate;
+                controller.UserList[i].IsAbsent = userlist[i].IsAbsent;
+                controller.UserList[i].CheckPoint = userlist[i]._Combobox1.SelectedIndex + 1;
+                controller.UserList[i].ClassPoint = userlist[i]._Combobox2.SelectedIndex + 1;
+                controller.UserList[i].DiamondCount = userlist[i].DiamondCount;
+            }
+            Guid guid = Guid.NewGuid();
+            var result = JsonConvert.SerializeObject(controller);
+            File.WriteAllText(guid.ToString() + ".json", result);
+        }
     }
 }

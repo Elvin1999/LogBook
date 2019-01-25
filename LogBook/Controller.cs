@@ -9,7 +9,7 @@ namespace LogBook
     class Controller
     {
         public string LessonContent { get; set; }
-        public List<UserControl2> UserList { get; set; }
+        public List<User> UserList { get; set; }
         
     }
 }

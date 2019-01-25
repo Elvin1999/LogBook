@@ -29,6 +29,7 @@ namespace LogBook
         public PictureBox Diamond2 { get { return pictureDiamond2; } set { pictureDiamond2 = value; } }
         public PictureBox Diamond3 { get { return pictureDiamond3; } set { pictureDiamond3 = value; } }
         public PictureBox PictureX { get { return pictureX; } set { pictureX = value; } }
+        public int DiamondCount { get; set; }
         public MetroFramework.Controls.MetroComboBox _Combobox1 { get { return metroCBClass; } set { metroCBClass = value; } }
         public MetroFramework.Controls.MetroComboBox _Combobox2 { get { return metroCBChecking; } set { metroCBChecking = value; } }
         public PictureBox CommentPicture { get { return pictureBComment; } set { pictureBComment = value; } }

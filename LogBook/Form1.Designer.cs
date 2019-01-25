@@ -235,7 +235,7 @@
             this.picturebCountDiamond.Size = new System.Drawing.Size(32, 29);
             this.picturebCountDiamond.TabIndex = 13;
             this.picturebCountDiamond.TabStop = false;
-            this.picturebCountDiamond.Click += new System.EventHandler(this.pictureResetContent_Click);
+            this.picturebCountDiamond.Click += new System.EventHandler(this.picturebCountDiamond_Click);
             // 
             // pictureResetContent
             // 
