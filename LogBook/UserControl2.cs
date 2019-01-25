@@ -20,10 +20,17 @@ namespace LogBook
         public bool IsClickedDiamond1 { get; set; }
         public bool IsClickedDiamond2 { get; set; }
         public bool IsClickedDiamond3 { get; set; }
+        public Label NameLabel { get { return labelFullName; } set { labelFullName = value; } }
+        public Label TimeLabel { get { return labelTime; } set { labelTime = value; } }
+        public MetroFramework.Controls.MetroRadioButton metroRadio1 { get { return metroRb1; } set { metroRb1 = value; } }
+        public MetroFramework.Controls.MetroRadioButton metroRadio2 { get { return metroRb2; } set { metroRb2 = value; } }
+        public MetroFramework.Controls.MetroRadioButton metroRadio3 { get { return metroRb3; } set { metroRb3 = value; } }
         public PictureBox Diamond1 { get { return pictureDiamond1; } set { pictureDiamond1 = value; } }
         public PictureBox Diamond2 { get { return pictureDiamond2; } set { pictureDiamond2 = value; } }
         public PictureBox Diamond3 { get { return pictureDiamond3; } set { pictureDiamond3 = value; } }
         public PictureBox PictureX { get { return pictureX; } set { pictureX = value; } }
+        public MetroFramework.Controls.MetroComboBox _Combobox1 { get { return metroCBClass; } set { metroCBClass = value; } }
+        public MetroFramework.Controls.MetroComboBox _Combobox2 { get { return metroCBChecking; } set { metroCBChecking = value; } }
         public PictureBox CommentPicture { get { return pictureBComment; } set { pictureBComment = value; } }
         private int DiamondCount;
         public UserControl2()
@@ -34,8 +41,8 @@ namespace LogBook
         private void UserControl2_Load(object sender, EventArgs e)
         {
             object[] numbers = new object[12] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
-            metroCBSinif.Items.AddRange(numbers);
-            metroCBYoxlama.Items.AddRange(numbers);
+            metroCBClass.Items.AddRange(numbers);
+            metroCBChecking.Items.AddRange(numbers);
         }
         private void metroCBYoxlama_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -108,6 +115,25 @@ namespace LogBook
         private void TextBoxComment_Leave(object sender, EventArgs e)
         {
             textBoxComment.Size = new Size(0, 0);
+        }
+
+        private void metroRb1_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (metroRb1.Checked == true)
+            //{
+            //    foreach (var item in this.Controls)
+            //    {
+            //        if (item is ComboBox cb)
+            //        {
+            //            cb.Enabled = true;
+            //        }
+            //        if (item is PictureBox pb)
+            //        {
+            //            pb.Enabled = true;
+            //        }
+            //    }
+            //}
+
         }
     }
 }

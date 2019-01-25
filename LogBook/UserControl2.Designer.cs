@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroCBYoxlama = new MetroFramework.Controls.MetroComboBox();
-            this.metroCBSinif = new MetroFramework.Controls.MetroComboBox();
+            this.metroCBChecking = new MetroFramework.Controls.MetroComboBox();
+            this.metroCBClass = new MetroFramework.Controls.MetroComboBox();
             this.metroRb3 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRb1 = new MetroFramework.Controls.MetroRadioButton();
             this.metroRb2 = new MetroFramework.Controls.MetroRadioButton();
@@ -48,24 +48,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureDiamond1)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroCBYoxlama
+            // metroCBChecking
             // 
-            this.metroCBYoxlama.FormattingEnabled = true;
-            this.metroCBYoxlama.ItemHeight = 23;
-            this.metroCBYoxlama.Location = new System.Drawing.Point(775, 82);
-            this.metroCBYoxlama.Name = "metroCBYoxlama";
-            this.metroCBYoxlama.Size = new System.Drawing.Size(78, 29);
-            this.metroCBYoxlama.TabIndex = 15;
-            this.metroCBYoxlama.SelectedIndexChanged += new System.EventHandler(this.metroCBYoxlama_SelectedIndexChanged);
+            this.metroCBChecking.FormattingEnabled = true;
+            this.metroCBChecking.ItemHeight = 23;
+            this.metroCBChecking.Location = new System.Drawing.Point(775, 82);
+            this.metroCBChecking.Name = "metroCBChecking";
+            this.metroCBChecking.Size = new System.Drawing.Size(78, 29);
+            this.metroCBChecking.TabIndex = 15;
+            this.metroCBChecking.SelectedIndexChanged += new System.EventHandler(this.metroCBYoxlama_SelectedIndexChanged);
             // 
-            // metroCBSinif
+            // metroCBClass
             // 
-            this.metroCBSinif.FormattingEnabled = true;
-            this.metroCBSinif.ItemHeight = 23;
-            this.metroCBSinif.Location = new System.Drawing.Point(912, 82);
-            this.metroCBSinif.Name = "metroCBSinif";
-            this.metroCBSinif.Size = new System.Drawing.Size(78, 29);
-            this.metroCBSinif.TabIndex = 14;
+            this.metroCBClass.FormattingEnabled = true;
+            this.metroCBClass.ItemHeight = 23;
+            this.metroCBClass.Location = new System.Drawing.Point(912, 82);
+            this.metroCBClass.Name = "metroCBClass";
+            this.metroCBClass.Size = new System.Drawing.Size(78, 29);
+            this.metroCBClass.TabIndex = 14;
             // 
             // metroRb3
             // 
@@ -89,6 +89,7 @@
             this.metroRb1.Text = "metroRadioButton3";
             this.metroRb1.UseStyleColors = true;
             this.metroRb1.UseVisualStyleBackColor = true;
+            this.metroRb1.CheckedChanged += new System.EventHandler(this.metroRb1_CheckedChanged);
             // 
             // metroRb2
             // 
@@ -196,8 +197,8 @@
             this.Controls.Add(this.pictureDiamond3);
             this.Controls.Add(this.pictureDiamond2);
             this.Controls.Add(this.pictureDiamond1);
-            this.Controls.Add(this.metroCBSinif);
-            this.Controls.Add(this.metroCBYoxlama);
+            this.Controls.Add(this.metroCBClass);
+            this.Controls.Add(this.metroCBChecking);
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(1349, 133);
             this.Load += new System.EventHandler(this.UserControl2_Load);
@@ -214,8 +215,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureDiamond3;
-        private MetroFramework.Controls.MetroComboBox metroCBYoxlama;
-        private MetroFramework.Controls.MetroComboBox metroCBSinif;
+        private MetroFramework.Controls.MetroComboBox metroCBChecking;
+        private MetroFramework.Controls.MetroComboBox metroCBClass;
         private System.Windows.Forms.PictureBox pictureDiamond1;
         private System.Windows.Forms.PictureBox pictureDiamond2;
         private MetroFramework.Controls.MetroRadioButton metroRb3;

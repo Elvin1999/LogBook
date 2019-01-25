@@ -21,7 +21,6 @@ namespace LogBook
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
             UserControl2 userControl = new UserControl2();
             userControl.Location = new Point(30, 75);
             userControl.FullName = "Camalzade Elvin";
@@ -94,20 +93,26 @@ namespace LogBook
                 item.IsTakePart = true;
             }
         }
-
         public bool CheckAccess { get; set; }
         private void metroRBTeacher_CheckedChanged(object sender, EventArgs e)
         {
-
             if (CheckAccess)
             {
-                foreach (var item in userlist)
-                {
-                    item.Enabled = true;
-                }
                 metroNoteAll.Enabled = true;
                 textBContent.Enabled = true;
                 pictureResetContent.Enabled = true;
+                foreach (var item in userlist)
+                {
+                    item.Enabled = true;
+                    item._Combobox1.Enabled = false;
+                    item._Combobox2.Enabled = false;
+                    item.PictureX.Enabled = false;
+                    item.CommentPicture.Enabled = false;
+                    item.Diamond1.Enabled = false;
+                    item.Diamond2.Enabled = false;
+                    item.Diamond3.Enabled = false;
+                    
+                }
             }
             CheckAccess = true;
 
