@@ -47,6 +47,7 @@
             this.labelCountDiamond = new System.Windows.Forms.Label();
             this.picturebCountDiamond = new System.Windows.Forms.PictureBox();
             this.pictureResetContent = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturebCountDiamond)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureResetContent)).BeginInit();
@@ -58,6 +59,7 @@
             this.metroRBTeacher.CustomForeColor = true;
             this.metroRBTeacher.ForeColor = System.Drawing.Color.Black;
             this.metroRBTeacher.ImageKey = "(none)";
+            this.metroRBTeacher.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.metroRBTeacher.Location = new System.Drawing.Point(6, 9);
             this.metroRBTeacher.Name = "metroRBTeacher";
             this.metroRBTeacher.Size = new System.Drawing.Size(125, 17);
@@ -70,6 +72,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(1, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1352, 55);
@@ -78,8 +81,9 @@
             // labelNameSur
             // 
             this.labelNameSur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.labelNameSur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNameSur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic);
             this.labelNameSur.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.labelNameSur.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.labelNameSur.Location = new System.Drawing.Point(66, 93);
             this.labelNameSur.Name = "labelNameSur";
             this.labelNameSur.Size = new System.Drawing.Size(150, 23);
@@ -89,8 +93,9 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(311, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 23);
@@ -100,8 +105,9 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(492, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(150, 23);
@@ -111,8 +117,9 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(937, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 23);
@@ -122,8 +129,9 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label5.Location = new System.Drawing.Point(806, 93);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 23);
@@ -133,8 +141,9 @@
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label7.Location = new System.Drawing.Point(1291, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 23);
@@ -150,8 +159,9 @@
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label8.Location = new System.Drawing.Point(1, -1);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(255, 39);
@@ -171,6 +181,7 @@
             // metroRBSubTeacher
             // 
             this.metroRBSubTeacher.BackColor = System.Drawing.Color.White;
+            this.metroRBSubTeacher.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.metroRBSubTeacher.Location = new System.Drawing.Point(137, 9);
             this.metroRBSubTeacher.Name = "metroRBSubTeacher";
             this.metroRBSubTeacher.Size = new System.Drawing.Size(139, 17);
@@ -185,6 +196,7 @@
             this.metroNoteAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
             this.metroNoteAll.CustomBackground = true;
             this.metroNoteAll.CustomForeColor = true;
+            this.metroNoteAll.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.metroNoteAll.Location = new System.Drawing.Point(540, 103);
             this.metroNoteAll.Name = "metroNoteAll";
             this.metroNoteAll.Size = new System.Drawing.Size(23, 24);
@@ -210,7 +222,8 @@
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic);
+            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label6.Location = new System.Drawing.Point(611, 41);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(116, 20);
@@ -220,8 +233,9 @@
             // labelCountDiamond
             // 
             this.labelCountDiamond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.labelCountDiamond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountDiamond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
             this.labelCountDiamond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.labelCountDiamond.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.labelCountDiamond.Location = new System.Drawing.Point(1053, 93);
             this.labelCountDiamond.Name = "labelCountDiamond";
             this.labelCountDiamond.Size = new System.Drawing.Size(71, 23);
@@ -230,6 +244,7 @@
             // 
             // picturebCountDiamond
             // 
+            this.picturebCountDiamond.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.picturebCountDiamond.Location = new System.Drawing.Point(1076, 87);
             this.picturebCountDiamond.Name = "picturebCountDiamond";
             this.picturebCountDiamond.Size = new System.Drawing.Size(32, 29);
@@ -240,6 +255,7 @@
             // pictureResetContent
             // 
             this.pictureResetContent.BackgroundImage = global::LogBook.Properties.Resources.pen;
+            this.pictureResetContent.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureResetContent.Location = new System.Drawing.Point(839, 35);
             this.pictureResetContent.Name = "pictureResetContent";
             this.pictureResetContent.Size = new System.Drawing.Size(25, 23);
@@ -247,12 +263,26 @@
             this.pictureResetContent.TabStop = false;
             this.pictureResetContent.Click += new System.EventHandler(this.pictureResetContent_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(1320, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1351, 622);
+            this.CancelButton = this.button1;
+            this.ClientSize = new System.Drawing.Size(1348, 622);
+            this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.picturebCountDiamond);
             this.Controls.Add(this.pictureResetContent);
             this.Controls.Add(this.label6);
@@ -301,6 +331,7 @@
         private System.Windows.Forms.PictureBox pictureResetContent;
         private System.Windows.Forms.Label labelCountDiamond;
         private System.Windows.Forms.PictureBox picturebCountDiamond;
+        private System.Windows.Forms.Button button1;
     }
 }
 

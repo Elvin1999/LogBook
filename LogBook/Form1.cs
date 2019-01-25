@@ -164,5 +164,11 @@ namespace LogBook
             var result = JsonConvert.SerializeObject(controller);
             File.WriteAllText(guid.ToString() + ".json", result);
         }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
