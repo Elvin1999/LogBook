@@ -148,26 +148,26 @@ namespace LogBook
 
         private void button1_Click(object sender, EventArgs e)
         {
-            controller.LessonContent = textBContent.Text;//to write file must take place in X button . . .
-            controller.UserList = new List<User>();
-            picturebCountDiamond.Enabled = false;//temporary
-            for (int i = 0; i < userlist.Count; i++)
-            {
-                var item = new User();
-                controller.UserList.Add(item);
-                controller.UserList[i].FullName = userlist[i].FullName;
-                controller.UserList[i].AccessDate = DateTime.Now;
-                controller.UserList[i].IsTakePartIn = userlist[i].IsTakePart;
-                controller.UserList[i].IsLate = userlist[i].IsLate;
-                controller.UserList[i].IsAbsent = userlist[i].IsAbsent;
-                controller.UserList[i].CheckPoint = userlist[i]._Combobox1.SelectedIndex + 1;
-                controller.UserList[i].ClassPoint = userlist[i]._Combobox2.SelectedIndex + 1;
-                controller.UserList[i].DiamondCount = userlist[i].UserDiamondCount;
-                controller.UserList[i].Comment = userlist[i].Comment.Text;
-            }
-            Guid guid = Guid.NewGuid();
-            var result = JsonConvert.SerializeObject(controller);
-            File.WriteAllText(guid.ToString() + ".json", result);
+            //controller.LessonContent = textBContent.Text;//to write file must take place in X button . . .
+            //controller.UserList = new List<User>();
+            //picturebCountDiamond.Enabled = false;//temporary
+            //for (int i = 0; i < userlist.Count; i++)
+            //{
+            //    var item = new User();
+            //    controller.UserList.Add(item);
+            //    controller.UserList[i].FullName = userlist[i].FullName;
+            //    controller.UserList[i].AccessDate = DateTime.Now;
+            //    controller.UserList[i].IsTakePartIn = userlist[i].IsTakePart;
+            //    controller.UserList[i].IsLate = userlist[i].IsLate;
+            //    controller.UserList[i].IsAbsent = userlist[i].IsAbsent;
+            //    controller.UserList[i].CheckPoint = userlist[i]._Combobox1.SelectedIndex + 1;
+            //    controller.UserList[i].ClassPoint = userlist[i]._Combobox2.SelectedIndex + 1;
+            //    controller.UserList[i].DiamondCount = userlist[i].UserDiamondCount;
+            //    controller.UserList[i].Comment = userlist[i].Comment.Text;
+            //}
+            //Guid guid = Guid.NewGuid();
+            //var result = JsonConvert.SerializeObject(controller);
+            //File.WriteAllText(guid.ToString() + ".json", result);
             Application.Exit();
         }
 
