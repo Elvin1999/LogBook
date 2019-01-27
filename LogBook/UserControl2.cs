@@ -57,7 +57,7 @@ namespace LogBook
                 Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
                 IsClickedDiamond1 = true;
             }
-            Diamond_Count = Form1.DiamondCount; MessageBox.Show(Form1.DiamondCount.ToString());
+            Diamond_Count = Form1.DiamondCount;
         }
         private void pictureDiamond3_Click(object sender, EventArgs e)
         {
@@ -102,11 +102,10 @@ namespace LogBook
                 }
             }
 
-            Diamond_Count = Form1.DiamondCount; MessageBox.Show(Form1.DiamondCount.ToString());
+            Diamond_Count = Form1.DiamondCount;
         }
         private void pictureDiamond2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(Form1.DiamondCount.ToString());
+        {            
             if (IsClickedDiamond1)
             {
                 if (Form1.DiamondCount >= 1)
@@ -184,9 +183,7 @@ namespace LogBook
                 PictureX.Enabled = true;
                 CommentPicture.Enabled = true;
             }
-
         }
-
         private void metroRb3_CheckedChanged(object sender, EventArgs e)
         {
             if (metroRb3.Checked)
