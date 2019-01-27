@@ -41,6 +41,7 @@ namespace LogBook
         }
         private void UserControl2_Load(object sender, EventArgs e)
         {
+            
             object[] numbers = new object[12] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
             metroCBClass.Items.AddRange(numbers);
             metroCBChecking.Items.AddRange(numbers);
@@ -212,6 +213,28 @@ namespace LogBook
                 Diamond3.Enabled = false;
                 PictureX.Enabled = false;//you have to decrease diamonds counts
                 CommentPicture.Enabled = false;
+                if (UserDiamondCount == 3)
+                {
+                    Form1.DiamondCount += 3;
+                }
+                else if(UserDiamondCount == 2)
+                {
+                    Form1.DiamondCount += 2;
+                }
+                else if (UserDiamondCount == 1)
+                {
+                    Form1.DiamondCount += 2;
+                }
+                Diamond1.Image = Properties.Resources.DiamondGray;
+                Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
+                IsClickedDiamond1 = false;
+                Diamond2.Image = Properties.Resources.DiamondGray;
+                Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
+                IsClickedDiamond2 = false;
+                Diamond3.Image = Properties.Resources.DiamondGray;
+                Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
+                IsClickedDiamond3 = false;
+                Diamond_Count = Form1.DiamondCount;
             }
         }
     }

@@ -271,7 +271,7 @@
             this.labelCountDiamond.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.labelCountDiamond.Location = new System.Drawing.Point(1053, 93);
             this.labelCountDiamond.Name = "labelCountDiamond";
-            this.labelCountDiamond.Size = new System.Drawing.Size(71, 23);
+            this.labelCountDiamond.Size = new System.Drawing.Size(17, 23);
             this.labelCountDiamond.TabIndex = 2;
             this.labelCountDiamond.Text = "5";
             // 

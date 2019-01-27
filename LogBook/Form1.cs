@@ -16,10 +16,12 @@ namespace LogBook
     {
         public List<UserControl2> userlist { get; set; }
         Controller controller = new Controller();
-        static public int DiamondCount = 5;
-       // static Label CountDiamondLabel = new Label();
+
+        static public int DiamondCount { get; set; }
+        static public bool IsCreated { get; set; }
         public Form1()
         {
+            DiamondCount = 5;
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -142,7 +144,7 @@ namespace LogBook
 
         private void picturebCountDiamond_Click(object sender, EventArgs e)
         {
-            
+
         }
 
 
