@@ -16,39 +16,39 @@ namespace LogBook
     {
         public List<UserControl2> userlist { get; set; }
         Controller controller = new Controller();
-        public int DiamondCount { get; set; }
+        static public int DiamondCount = 5;
+       // static Label CountDiamondLabel = new Label();
         public Form1()
         {
             InitializeComponent();
-
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            UserControl2 userControl = new UserControl2();
+            UserControl2 userControl = new UserControl2(DiamondCount);
             userControl.Location = new Point(30, 75);
             userControl.FullName = "Camalzade_Elvin";
             userControl.Accesstime = "10.10.2018";
-            UserControl2 userControl2 = new UserControl2();
+            UserControl2 userControl2 = new UserControl2(DiamondCount);
             userControl2.Location = new Point(30, 130);
             userControl2.FullName = "Samir Hemzeyev";
             userControl2.Accesstime = "10.10.2018";
-            UserControl2 userControl3 = new UserControl2();
+            UserControl2 userControl3 = new UserControl2(DiamondCount);
             userControl3.Location = new Point(30, 185);
             userControl3.FullName = "Mustafayev Nurullah";
             userControl3.Accesstime = "10.10.2018";
-            UserControl2 userControl4 = new UserControl2();
+            UserControl2 userControl4 = new UserControl2(DiamondCount);
             userControl4.Location = new Point(30, 240);
             userControl4.FullName = "Abdullabayli Saleh";
             userControl4.Accesstime = "10.10.2018";
-            UserControl2 userControl5 = new UserControl2();
+            UserControl2 userControl5 = new UserControl2(DiamondCount);
             userControl5.Location = new Point(30, 295);
             userControl5.FullName = "Mustafayev Tural";
             userControl5.Accesstime = "10.10.2018";
-            UserControl2 userControl6 = new UserControl2();
+            UserControl2 userControl6 = new UserControl2(DiamondCount);
             userControl6.Location = new Point(30, 350);
             userControl6.FullName = "Omarov Islam";
             userControl6.Accesstime = "10.10.2018";
-            UserControl2 userControl7 = new UserControl2();
+            UserControl2 userControl7 = new UserControl2(DiamondCount);
             userControl7.Location = new Point(30, 405);
             userControl7.FullName = "Ahmadov Anar";
             userControl7.Accesstime = "10.10.2018";
@@ -115,11 +115,9 @@ namespace LogBook
                     item.Diamond1.Enabled = false;
                     item.Diamond2.Enabled = false;
                     item.Diamond3.Enabled = false;
-
                 }
             }
             CheckAccess = true;
-
         }
         public bool IsWritedToContent { get; set; }
         private void pictureResetContent_Click(object sender, EventArgs e)
@@ -150,27 +148,32 @@ namespace LogBook
 
         private void button1_Click(object sender, EventArgs e)
         {
-            controller.LessonContent = textBContent.Text;//to write file must take place in X button . . .
-            controller.UserList = new List<User>();
-            picturebCountDiamond.Enabled = false;//temporary
-            for (int i = 0; i < userlist.Count; i++)
-            {
-                var item = new User();
-                controller.UserList.Add(item);
-                controller.UserList[i].FullName = userlist[i].FullName;
-                controller.UserList[i].AccessDate = DateTime.Now;
-                controller.UserList[i].IsTakePartIn = userlist[i].IsTakePart;
-                controller.UserList[i].IsLate = userlist[i].IsLate;
-                controller.UserList[i].IsAbsent = userlist[i].IsAbsent;
-                controller.UserList[i].CheckPoint = userlist[i]._Combobox1.SelectedIndex + 1;
-                controller.UserList[i].ClassPoint = userlist[i]._Combobox2.SelectedIndex + 1;
-                controller.UserList[i].DiamondCount = userlist[i].DiamondCount;
-                controller.UserList[i].Comment = userlist[i].Comment.Text;
-            }
-            Guid guid = Guid.NewGuid();
-            var result = JsonConvert.SerializeObject(controller);
-            File.WriteAllText(guid.ToString() + ".json", result);
+            //controller.LessonContent = textBContent.Text;//to write file must take place in X button . . .
+            //controller.UserList = new List<User>();
+            //picturebCountDiamond.Enabled = false;//temporary
+            //for (int i = 0; i < userlist.Count; i++)
+            //{
+            //    var item = new User();
+            //    controller.UserList.Add(item);
+            //    controller.UserList[i].FullName = userlist[i].FullName;
+            //    controller.UserList[i].AccessDate = DateTime.Now;
+            //    controller.UserList[i].IsTakePartIn = userlist[i].IsTakePart;
+            //    controller.UserList[i].IsLate = userlist[i].IsLate;
+            //    controller.UserList[i].IsAbsent = userlist[i].IsAbsent;
+            //    controller.UserList[i].CheckPoint = userlist[i]._Combobox1.SelectedIndex + 1;
+            //    controller.UserList[i].ClassPoint = userlist[i]._Combobox2.SelectedIndex + 1;
+            //    controller.UserList[i].DiamondCount = userlist[i].DiamondCount;
+            //    controller.UserList[i].Comment = userlist[i].Comment.Text;
+            //}
+            //Guid guid = Guid.NewGuid();
+            //var result = JsonConvert.SerializeObject(controller);
+            //File.WriteAllText(guid.ToString() + ".json", result);
             Application.Exit();
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            labelCountDiamond.Text = Form1.DiamondCount.ToString();
         }
     }
 }
