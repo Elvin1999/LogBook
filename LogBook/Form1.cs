@@ -24,31 +24,31 @@ namespace LogBook
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            UserControl2 userControl = new UserControl2(DiamondCount);
+            UserControl2 userControl = new UserControl2();
             userControl.Location = new Point(30, 75);
             userControl.FullName = "Camalzade_Elvin";
             userControl.Accesstime = "10.10.2018";
-            UserControl2 userControl2 = new UserControl2(DiamondCount);
+            UserControl2 userControl2 = new UserControl2();
             userControl2.Location = new Point(30, 130);
             userControl2.FullName = "Samir Hemzeyev";
             userControl2.Accesstime = "10.10.2018";
-            UserControl2 userControl3 = new UserControl2(DiamondCount);
+            UserControl2 userControl3 = new UserControl2();
             userControl3.Location = new Point(30, 185);
             userControl3.FullName = "Mustafayev Nurullah";
             userControl3.Accesstime = "10.10.2018";
-            UserControl2 userControl4 = new UserControl2(DiamondCount);
+            UserControl2 userControl4 = new UserControl2();
             userControl4.Location = new Point(30, 240);
             userControl4.FullName = "Abdullabayli Saleh";
             userControl4.Accesstime = "10.10.2018";
-            UserControl2 userControl5 = new UserControl2(DiamondCount);
+            UserControl2 userControl5 = new UserControl2();
             userControl5.Location = new Point(30, 295);
             userControl5.FullName = "Mustafayev Tural";
             userControl5.Accesstime = "10.10.2018";
-            UserControl2 userControl6 = new UserControl2(DiamondCount);
+            UserControl2 userControl6 = new UserControl2();
             userControl6.Location = new Point(30, 350);
             userControl6.FullName = "Omarov Islam";
             userControl6.Accesstime = "10.10.2018";
-            UserControl2 userControl7 = new UserControl2(DiamondCount);
+            UserControl2 userControl7 = new UserControl2();
             userControl7.Location = new Point(30, 405);
             userControl7.FullName = "Ahmadov Anar";
             userControl7.Accesstime = "10.10.2018";
@@ -174,6 +174,16 @@ namespace LogBook
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
             labelCountDiamond.Text = Form1.DiamondCount.ToString();
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            labelCountDiamond.Text = Form1.DiamondCount.ToString();
+        }
+
+        private void Form1_MouseHover(object sender, EventArgs e)
+        {
+
         }
     }
 }

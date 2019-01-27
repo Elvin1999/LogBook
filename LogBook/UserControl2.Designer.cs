@@ -57,7 +57,7 @@
             this.metroCBChecking.Name = "metroCBChecking";
             this.metroCBChecking.Size = new System.Drawing.Size(78, 29);
             this.metroCBChecking.TabIndex = 15;
-            this.metroCBChecking.SelectedIndexChanged += new System.EventHandler(this.metroCBYoxlama_SelectedIndexChanged);
+            
             // 
             // metroCBClass
             // 

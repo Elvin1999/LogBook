@@ -33,12 +33,10 @@ namespace LogBook
         public MetroFramework.Controls.MetroComboBox _Combobox2 { get { return metroCBChecking; } set { metroCBChecking = value; } }
         public PictureBox CommentPicture { get { return pictureBComment; } set { pictureBComment = value; } }
         public TextBox Comment { get { return textBoxComment; } set { textBoxComment = value; } }
-        public int CountDiamond { get; set; }
-        public int AllDiamondCount { get; set; }
-        public UserControl2(int count)
+        private int Diamond_Count = 5;
+        public UserControl2()
         {
             InitializeComponent();
-            CountDiamond = count;
         }
         private void UserControl2_Load(object sender, EventArgs e)
         {
@@ -51,82 +49,92 @@ namespace LogBook
         }
         private void pictureDiamond1_Click(object sender, EventArgs e)
         {
-            if (Form1.DiamondCount <= 5 && Form1.DiamondCount >= 1)
-            {
-                if (!IsClickedDiamond1)
-                {
-                    Form1.DiamondCount -= 1;
-                }
 
+            if (Form1.DiamondCount >= 1 && !IsClickedDiamond1)
+            {
+                Form1.DiamondCount -= 1;
                 Diamond1.Image = Properties.Resources.DiamondBlue;
                 Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
                 IsClickedDiamond1 = true;
             }
-
+            Diamond_Count = Form1.DiamondCount; MessageBox.Show(Form1.DiamondCount.ToString());
         }
         private void pictureDiamond3_Click(object sender, EventArgs e)
         {
-            if (Form1.DiamondCount <= 5 && Form1.DiamondCount >= 1)
+
+            if (IsClickedDiamond2 && IsClickedDiamond1)
             {
-                if (IsClickedDiamond1 && IsClickedDiamond2)
+                if (Form1.DiamondCount >= 1)
                 {
                     Form1.DiamondCount -= 1;
+                    Diamond3.Image = Properties.Resources.DiamondBlue;
+                    Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
+                    IsClickedDiamond3 = true;
                 }
-                else if (IsClickedDiamond1)
+            }
+            else if (IsClickedDiamond1)
+            {
+                if (Form1.DiamondCount >= 2)
                 {
                     Form1.DiamondCount -= 2;
+                    Diamond2.Image = Properties.Resources.DiamondBlue;
+                    Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
+                    IsClickedDiamond2 = true;
+                    Diamond3.Image = Properties.Resources.DiamondBlue;
+                    Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
+                    IsClickedDiamond3 = true;
                 }
-                else
+            }
+            else
+            {
+                if (Form1.DiamondCount >= 3)
                 {
                     Form1.DiamondCount -= 3;
-                }//userin diamond countuna yaz bu datani
-                Diamond1.Image = Properties.Resources.DiamondBlue;
-                Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
-                IsClickedDiamond1 = true;
-                Diamond2.Image = Properties.Resources.DiamondBlue;
-                Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
-                IsClickedDiamond2 = true;
-                Diamond3.Image = Properties.Resources.DiamondBlue;
-                Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
-                IsClickedDiamond3 = true;
+                    Diamond1.Image = Properties.Resources.DiamondBlue;
+                    Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    IsClickedDiamond1 = true;
+                    Diamond2.Image = Properties.Resources.DiamondBlue;
+                    Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
+                    IsClickedDiamond2 = true;
+                    Diamond3.Image = Properties.Resources.DiamondBlue;
+                    Diamond3.SizeMode = PictureBoxSizeMode.StretchImage;
+                    IsClickedDiamond3 = true;
+                }
             }
 
+            Diamond_Count = Form1.DiamondCount; MessageBox.Show(Form1.DiamondCount.ToString());
         }
         private void pictureDiamond2_Click(object sender, EventArgs e)
         {
-            if (Form1.DiamondCount <= 5 && Form1.DiamondCount >= 1)
+            MessageBox.Show(Form1.DiamondCount.ToString());
+            if (IsClickedDiamond1)
             {
-                if (IsClickedDiamond1)
+                if (Form1.DiamondCount >= 1)
                 {
                     Form1.DiamondCount -= 1;
+                    Diamond2.Image = Properties.Resources.DiamondBlue;
+                    Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
-                else
+            }
+            else
+            {
+                if (Form1.DiamondCount >= 2)
                 {
+                    Diamond1.Image = Properties.Resources.DiamondBlue;
+                    Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
+                    Diamond2.Image = Properties.Resources.DiamondBlue;
+                    Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
                     Form1.DiamondCount -= 2;
                 }
-                Diamond1.Image = Properties.Resources.DiamondBlue;
-                Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
-                IsClickedDiamond1 = true;
-                Diamond2.Image = Properties.Resources.DiamondBlue;
-                Diamond2.SizeMode = PictureBoxSizeMode.StretchImage;
-                IsClickedDiamond2 = true;
-            }
-        }
 
+            }
+            IsClickedDiamond1 = true;
+            IsClickedDiamond2 = true;
+            Diamond_Count = Form1.DiamondCount;
+        }
         private void pictureX_Click(object sender, EventArgs e)
         {
-            if (IsClickedDiamond1 && IsClickedDiamond2 && IsClickedDiamond3)
-            {
-                Form1.DiamondCount += 3;
-            }
-            else if(IsClickedDiamond1 && IsClickedDiamond2)
-            {
-                Form1.DiamondCount += 2;
-            }
-            else if(IsClickedDiamond1)
-            {
-                Form1.DiamondCount += 1;
-            }
+
             Diamond1.Image = Properties.Resources.DiamondGray;
             Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
             IsClickedDiamond1 = false;
