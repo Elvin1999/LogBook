@@ -232,6 +232,7 @@
             // 
             // picturebCountDiamond
             // 
+            this.picturebCountDiamond.Image = global::LogBook.Properties.Resources.BackBlueDiamond;
             this.picturebCountDiamond.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.picturebCountDiamond.Location = new System.Drawing.Point(1076, 87);
             this.picturebCountDiamond.Name = "picturebCountDiamond";
@@ -281,7 +282,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.button1;
-            this.ClientSize = new System.Drawing.Size(1348, 622);
+            this.ClientSize = new System.Drawing.Size(1348, 621);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.picturebCountDiamond);
