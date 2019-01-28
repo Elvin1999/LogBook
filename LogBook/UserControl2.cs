@@ -32,8 +32,11 @@ namespace LogBook
         public MetroFramework.Controls.MetroComboBox _Combobox1 { get { return metroCBClass; } set { metroCBClass = value; } }
         public MetroFramework.Controls.MetroComboBox _Combobox2 { get { return metroCBChecking; } set { metroCBChecking = value; } }
         public PictureBox CommentPicture { get { return pictureBComment; } set { pictureBComment = value; } }
-        public TextBox Comment { get { return textBoxComment; } set { textBoxComment = value; } }        
+        public TextBox Comment { get { return textBoxComment; } set { textBoxComment = value; } }
         public int UserDiamondCount { get; set; }
+
+        public EventHandler<EventArgs> DiamondClicked { get; set; }
+
         private int Diamond_Count = 5;
         public UserControl2()
         {
@@ -41,7 +44,7 @@ namespace LogBook
         }
         private void UserControl2_Load(object sender, EventArgs e)
         {
-            
+
             object[] numbers = new object[12] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
             metroCBClass.Items.AddRange(numbers);
             metroCBChecking.Items.AddRange(numbers);
@@ -52,8 +55,10 @@ namespace LogBook
         private void pictureDiamond1_Click(object sender, EventArgs e)
         {
 
+
             if (Form1.DiamondCount >= 1 && !IsClickedDiamond1)
             {
+                DiamondClicked.Invoke(sender, e);
                 Form1.DiamondCount -= 1;
                 Diamond1.Image = Properties.Resources.DiamondBlue;
                 Diamond1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -64,7 +69,7 @@ namespace LogBook
         }
         private void pictureDiamond3_Click(object sender, EventArgs e)
         {
-
+            DiamondClicked.Invoke(sender, e);
             if (IsClickedDiamond2 && IsClickedDiamond1)
             {
                 if (Form1.DiamondCount >= 1)
@@ -108,7 +113,8 @@ namespace LogBook
             Diamond_Count = Form1.DiamondCount;
         }
         private void pictureDiamond2_Click(object sender, EventArgs e)
-        {            
+        {
+            DiamondClicked.Invoke(sender, e);
             if (IsClickedDiamond1)
             {
                 if (Form1.DiamondCount >= 1)
@@ -217,7 +223,7 @@ namespace LogBook
                 {
                     Form1.DiamondCount += 3;
                 }
-                else if(UserDiamondCount == 2)
+                else if (UserDiamondCount == 2)
                 {
                     Form1.DiamondCount += 2;
                 }
@@ -236,6 +242,31 @@ namespace LogBook
                 IsClickedDiamond3 = false;
                 Diamond_Count = Form1.DiamondCount;
             }
+        }
+
+        private void metroCBChecking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroCBClass_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelFullName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

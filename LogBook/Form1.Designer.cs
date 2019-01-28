@@ -44,10 +44,10 @@
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
             this.textBContent = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.picturebCountDiamond = new System.Windows.Forms.PictureBox();
-            this.pictureResetContent = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.labelCountDiamond = new System.Windows.Forms.Label();
+            this.picturebCountDiamond = new System.Windows.Forms.PictureBox();
+            this.pictureResetContent = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturebCountDiamond)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureResetContent)).BeginInit();
@@ -230,6 +230,30 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Dersin movzusu";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.Location = new System.Drawing.Point(1324, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // labelCountDiamond
+            // 
+            this.labelCountDiamond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.labelCountDiamond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
+            this.labelCountDiamond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
+            this.labelCountDiamond.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.labelCountDiamond.Location = new System.Drawing.Point(1053, 93);
+            this.labelCountDiamond.Name = "labelCountDiamond";
+            this.labelCountDiamond.Size = new System.Drawing.Size(17, 23);
+            this.labelCountDiamond.TabIndex = 2;
+            this.labelCountDiamond.Text = "5";
+            // 
             // picturebCountDiamond
             // 
             this.picturebCountDiamond.Image = global::LogBook.Properties.Resources.BackBlueDiamond;
@@ -251,30 +275,6 @@
             this.pictureResetContent.TabIndex = 13;
             this.pictureResetContent.TabStop = false;
             this.pictureResetContent.Click += new System.EventHandler(this.pictureResetContent_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button1.Location = new System.Drawing.Point(1320, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // labelCountDiamond
-            // 
-            this.labelCountDiamond.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.labelCountDiamond.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic);
-            this.labelCountDiamond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(168)))), ((int)(((byte)(243)))));
-            this.labelCountDiamond.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.labelCountDiamond.Location = new System.Drawing.Point(1053, 93);
-            this.labelCountDiamond.Name = "labelCountDiamond";
-            this.labelCountDiamond.Size = new System.Drawing.Size(17, 23);
-            this.labelCountDiamond.TabIndex = 2;
-            this.labelCountDiamond.Text = "5";
             // 
             // Form1
             // 

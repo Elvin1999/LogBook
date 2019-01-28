@@ -61,6 +61,7 @@ namespace LogBook
             int i = 0;
             foreach (var item in userlist)
             {
+                item.DiamondClicked += Okay;
                 item.IsAbsent = true;
                 item.Number = (++i).ToString();
                 item.Diamond1.Image = Properties.Resources.DiamondGray;
@@ -86,6 +87,12 @@ namespace LogBook
             picturebCountDiamond.SizeMode = PictureBoxSizeMode.StretchImage;
             Controls.AddRange(userlist.ToArray());
         }
+
+        private void Okay(object sender, EventArgs e)
+        {
+            labelCountDiamond.Text = Form1.DiamondCount.ToString();
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             PictureBox pictureBox = sender as PictureBox;
